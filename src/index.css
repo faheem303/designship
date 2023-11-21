@@ -1,13 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sauce One', sans-serif;
+  padding: 0px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.containers {
+  width: 95% !important;
+  margin: 0 auto;
 }
+
+
+.hero-bg-img {
+  background-image: url(./assets/images/64eb7153d04155015b84a72d_Group\ 6858arrows.svg);
+  background-size: cover;
+}
+.bg-needastart-img{
+  background-image: url(./assets//images/64eb6c3c811b07c6ca1961ae_DS_SHAPE.svg);
+  background-color: #dbc4f0;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+}
+.howit-img{
+  background-image: url(./assets/images/mainbg.png);
+  background-repeat: repeat;
+  background-color: #f0f0f0;
+}
+.gallery-wrap{
+  padding: 100px 0px;
+  flex-direction: column;
+    display: flex;
+    overflow: hidden;
+}
+.gallery{
+
+    will-change: transform;
+    transform: translate3d(-11.4086vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+
+.product-carousel {
+  padding: 0px 0px;
+  align-items: end;
+}
+
+.product-container {
+  padding: 0 0px;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.pre-btn,
+.next-btn {
+  border: none;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.next-btn {
+  right: 0;
+}
+
+.next-btn p,
+.pre-btn p {
+  font-size: 50px;
+  background-color: rgba(255, 255, 255, 0.436);
+  box-shadow: 0px 0px 10px 1px black;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.mycard {
+  min-width: 300px;
+  max-width: 300px;
+
+  margin: 10px;
+  color: white;
+}
+
+/*  */
+
+#logoMarqueeSection {
+  max-width: 1920px !important;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.default-content-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+.default-content-container1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+div.marquee>a>img {
+  height: 60px;
+
+}
+
+.logoMarqueeSection>div>div {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+}
+
+.marquee-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+}
+.marquee-wrapper1 {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee {
+  animation-duration: 57s;
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  transform: translate3d(0%, 0, 0);
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marquee a {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 5.4rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.link a{
+  color: #8f78f0;
+}
+.cardContainer{
+  overflow: hidden;
+  cursor: pointer;
+}
+.animteCard{
+  transition: all ease-in-out .5s;
+  transform: translateY(140px);
+}
+.cardContainer:hover .animteCard{
+  transform: translateY(0);
+}
+.animteCard i{
+  color: #ff70d3;
+
+}
+.cardContainer:hover i{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1);
+}
+@keyframes ping {
+  75%, 100% {
+    transform: scale(1.5);
+  }
+}
+.animteCard p{
+  transition: all ease-in-out .5s;
+  /* color: white; */
+  opacity: 0;
+}
+.cardContainer:hover p{
+  /* color: #000; */
+  opacity: 1;
+}
+.slider1:hover button{
+  transition: all ease-in-out 0.2s;
+  background-color: #ff70d3;
+}
+.slider2:hover button {
+  background-color:rgb(97, 77, 204);
+  /* background-color: red; */
+}
+.slider3:hover button{
+  background-color:rgb(255, 103, 82)
+}
+
