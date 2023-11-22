@@ -31,7 +31,7 @@ function Portfolio() {
 
     return (
         <div className='bg-white'>
-            <div className="py-[6rem] container">
+            <div className="py-[6rem] containers">
                 <div className="flex justify-center space-x-8">
                     <div className="relative w-[20rem]">
                         <button
