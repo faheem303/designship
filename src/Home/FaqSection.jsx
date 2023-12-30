@@ -32,7 +32,8 @@ const FaqItem = ({ question, answer, isOpen, toggleItem }) => {
     </div>
   );
 };
-const FaqSection = () => {
+<strong></strong>;
+const FaqList = () => {
   const faqData = [
     {
       question: "What's the catch?",
@@ -120,7 +121,7 @@ const FaqSection = () => {
   return (
     <>
       <div>
-        <div className="w-[95%] mx-auto">
+        <div className="w-[95%] mx-auto pb-[100px]">
           <div className="2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[90%] w-[100%] mx-auto">
             <h2 className="2xl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[33px] sm:text-[25px] text-[25px] font-[400] py-[30px]">
               Frequently asked questions
@@ -145,4 +146,4 @@ const FaqSection = () => {
   );
 };
 
-export default FaqSection;
+export default FaqList;

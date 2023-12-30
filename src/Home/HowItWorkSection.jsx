@@ -7,7 +7,7 @@ import dots from "../assets/images/dotsimg.png"
 function HowItWorkSection() {
     return (
         <div className="howit-img">
-            <div className="container py-[6rem]">
+            <div className="container mx-auto py-[6rem]">
                 <div className="w-[80%] 2xl:w-[66%] xl:w-[66%] lg:w-[66%] md:w-[66%] sm-[80%] m-auto">
                     <div className="text-center">
                         <h3 className="text-[32px] font-[700]">How it <span className="px-3 py-[8px]  border rounded-[8px] border-dashed border-black">works</span></h3>

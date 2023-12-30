@@ -5,26 +5,28 @@ import NeedaStartSection from "./NeedAstartSection";
 import HowItWorkSection from "./HowItWorkSection";
 import Portfolio from "../Pages/Portfolio";
 import BrandLogos from "../Component/brandlogo";
-import Services from "./ServicesSection";
 import CardSection from "./CardSection";
-import PriceSection from "./PriceSection";
+import PriceSection from "../Home/PriceSection";
 import FaqSection from "./FaqSection";
-import SalarySection from "./SalarySection";
+import ProjectSection from "./ProjectSection";
+import Services from "./ServicesSection";
+import Salary from "./SalarySection";
 
 function Home() {
   return (
     <div className="">
       <div className="pt-[6rem]">
         <HeroSection />
-        <NeedaStartSection />
+        <ProjectSection />
         <HowItWorkSection />
         <Services />
         <CardSection/>
         <YourAssets />
+        <NeedaStartSection />
         <PriceSection/>
-        <FaqSection/>
-        <SalarySection/>
+        <Salary/>
         <BrandLogos />
+        <FaqSection/>
       </div>
     </div>
   );

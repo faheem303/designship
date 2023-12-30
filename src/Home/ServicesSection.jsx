@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Component/Button";
 import { v4 as uuidv4 } from "uuid";
 
@@ -150,6 +150,29 @@ const btnData3 = [
 ];
 
 function Services() {
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [isAnimating2, setIsAnimating2] = useState(false);
+  const [isAnimating3, setIsAnimating3] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsAnimating(true);
+  };
+  const handleMouseLeave = () => {
+    setIsAnimating(true);
+  };
+  const handleMouseEnter2 = () => {
+    setIsAnimating2(true);
+  };
+  const handleMouseLeave2 = () => {
+    setIsAnimating2(true);
+  };
+  const handleMouseEnter3 = () => {
+    setIsAnimating3(true);
+  };
+  const handleMouseLeave3 = () => {
+    setIsAnimating3(true);
+  };
+
   return (
     <>
       <div className="py-[45px]">
@@ -171,34 +194,55 @@ function Services() {
             </h3>
           </div>
         </div>
-        <div className="default-content-container1 flex items-center">
-        <div className="default-content-container-inner marquee-wrapper1  pt-[95px] flex flex-col gap-[34px]">
-          <div  className="marquee flex space-x-8 slider1">
-            {btnData1.map((item, id) => (
-              <Button
-                className="bg-[#d9d9d9] w-auto px-[48px] h-[78px] text-[26px] text-[#FFF] font-[500] rounded-[100px]"
-                btnText={item.btnText}
-              />
-            ))}
+        <div className="servicecls pt-[95px] flex flex-col gap-[34px]">
+          <div
+            className={`slider1 w-[5000px] ${isAnimating ? "animate-slide" : ""}`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="flex gap-[32px] startSlide">
+              {btnData1.map((item, id) => (
+                <Button
+                  className={`bg-[#d9d9d9] px-[50px]  text-[24px] h-[75px] text-[#FFF] font-[500] leading-[29px] rounded-[100px] ${isAnimating ? "bg-[#ff70d3] w-[100%]":"bg-[#d9d9d9] w-[100%]"}`}
+                  btnText={item.btnText}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              ))}
+            </div>
           </div>
-          <div className="marquee flex space-x-8 slider2">
-            {btnData2.map((item, id) => (
-              <Button
-                className="bg-[#d9d9d9] w-auto px-[48px] h-[78px] text-[26px] text-[#FFF] font-[500] rounded-[100px]"
-                btnText={item.btnText}
-              />
-            ))}
+          <div
+            className={`slider2 w-[5000px] ${isAnimating2 ? "animate-slide2" : ""}`}
+            onMouseEnter={handleMouseEnter2}
+            onMouseLeave={handleMouseLeave2}
+          >
+            <div className="flex gap-[32px] startSlide">
+              {btnData3.map((item, id) => (
+                <Button
+                  className={`bg-[#d9d9d9] px-[50px]  text-[24px] h-[75px]  text-[#FFF] font-[500] leading-[29px] rounded-[100px] ${isAnimating2 ? "btn2 w-[100%]":"bg-[#d9d9d9] w-[100%]"}`}
+                  btnText={item.btnText}
+                  onMouseEnter={handleMouseEnter2}
+                  onMouseLeave={handleMouseLeave2}
+                />
+              ))}
+            </div>
           </div>
-          <div className="marquee flex space-x-8 slider1">
-            {btnData3.map((item, id) => (
-              <Button
-                className="bg-[#d9d9d9] w-auto px-[48px] h-[78px] text-[26px] text-[#FFF] font-[500] rounded-[100px]"
-                btnText={item.btnText}
-              />
-            ))}
+          <div
+            className={`slider3 w-[5000px] ${isAnimating3 ? "animate-slide3" : ""}`}
+            onMouseEnter={handleMouseEnter3}
+            onMouseLeave={handleMouseLeave3}
+          >
+            <div className="flex gap-[32px] startSlide">
+              {btnData3.map((item, id) => (
+                <Button
+                  className={`bg-[#d9d9d9] px-[50px]  text-[24px] h-[75px]  text-[#FFF] font-[500] leading-[29px] rounded-[100px] ${isAnimating3 ? "btn3 w-[100%]":"bg-[#d9d9d9] w-[100%]"}`}
+                  btnText={item.btnText}
+                  onMouseEnter={handleMouseEnter3}
+                  onMouseLeave={handleMouseLeave3}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-
         </div>
       </div>
     </>

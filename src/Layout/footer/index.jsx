@@ -5,7 +5,7 @@ import pen from "../../assets/logo/pen.png"
 function Footer() {
   return (
     <div className="bg-[#4a4f74] bg-main  ">
-      <div className="py-[5rem] containers space-y-8 2xl:flex xl:flex lg:flex md:flex sm:flex block justify-betwen">
+      <div className="py-[5rem] containers xs:space-y-8 2xl:flex xl:flex lg:flex md:flex sm:flex block justify-betwen">
         <div className="2xl:w-[35%] xl:w-[35%] lg:w-[35%] md:w-[35%] sm:w-[35%] w-[100%]">
           <img className="w-[150px]" src={ftrimg} alt="" />
         </div>

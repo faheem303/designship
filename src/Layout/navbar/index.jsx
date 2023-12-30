@@ -34,7 +34,7 @@ function Navbar() {
             <a href="" className="font-[600] text-[16px] outline-none">Blog</a>
           </div>
           <div className="flex items-center justify-end space-x-3 2xl:w-[auto] xl:w-[auto] lg:w-[auto] md:w-[auto] sm:w-[auto] w-[80%]">
-            <button className="py-3 px-7 rounded-full border border-black hover:bg-black hover:text-white font-[600]">Book a Call</button>
+            <button className="py-3 px-7 rounded-[14px] border border-black hover:bg-black hover:text-white font-[600]">Book a Call</button>
             <div className='2xl:hidden xl:hidden lg:hidden md:block sm:block xs:block '>
               <img src={menu} onClick={handleNavbarMenu} alt="" />
             </div>

@@ -7,7 +7,7 @@ function HeroSection() {
     return (
         <div className="pb-12">
             <div className="hero-bg-img">
-                <div className="container  py-4 2xl:py-[100px] xl:py-[100px] lg:py-[100px] md:py-[100px] sm:py-6">
+                <div className="container mx-auto  py-4 2xl:py-[100px] xl:py-[100px] lg:py-[100px] md:py-[100px] sm:py-6">
                     <div className="text-center space-y-4">
                         <h2 className="text-[100px] leading-[112%] font-[700] text-center  text-[#131313]">A new kind of <br />
                             design agency</h2>

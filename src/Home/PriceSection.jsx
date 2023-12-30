@@ -1,7 +1,41 @@
-import React from "react";
-import PricingCard from "../Component/PricingCard";
+import React, { useState } from "react";
+import PricingCards from "../Component/PricingCards";
+import StartedCards from "../Component/StartedCards";
+import { v4 as uuidv4 } from "uuid";
 
-function PriceSection() {
+const pricingData = [
+  {
+    id: uuidv4(),
+    title: "10 hours",
+    para: "Up to 10 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
+    amount: "$1,300",
+    hourly: "Pay $130/hr",
+  },
+  {
+    id: uuidv4(),
+    title: "20 hours",
+    para: "Up to 20 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
+    amount: "$2,400",
+    hourly: "Pay $120/hr",
+  },
+  {
+    id: uuidv4(),
+    title: "40 hours",
+    para: "Up to 40 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
+    amount: "$4,400",
+    hourly: "Pay $110/hr",
+  },
+];
+
+function Pricing() {
+
+  const [activeTab, setActiveTab] = useState(1)
+  // const [isactive, setIsActive] = useState(false)
+
+  const handleClick = (id) => {
+    setActiveTab(id)
+  }
+
   return (
     <>
       <div>
@@ -24,24 +58,45 @@ function PriceSection() {
                 multi-faceted projects while staying lean.
               </p>
             </div>
-            <div className="2xl:w-[37%] xl:w-[37%] lg:w-[37%] md:w-[100%] sm:w-[100%] w-[100%] flex items-end pb-[30px]">
-              <a
-                href="#"
-                className=" text-[22px] text-[#02055d] font-[700] border-b-[2px] border-[#02055d] border-solid mr-[18px]"
-              >
+            <div className="2xl:w-[37%] xl:w-[37%] lg:w-[37%] md:w-[100%] sm:w-[100%] w-[100%] flex items-end justify-end pb-[30px]">
+              <span onClick={()=> handleClick(1)} className={`cursor-pointer border-b-[2px] border-[#faf3f0] text-[#000000bf] text-[22px] font-[400] hover:text-[#02055d] mr-[18px] pb-[2px] hover:border-b-[2px] hover:border-[#02055d] hover:border-solid ${activeTab === 1?"font-[700] text-[#02055d] border-b-[2px] border-[#02055d] border-solid":""}`}>
                 Dedicated Team
-              </a>
-              <a
-                href="#"
-                className="text-[#000000bf] text-[22px] font-[400]"
-              >
+              </span>
+              <span onClick={()=> handleClick(2)} className={`cursor-pointer border-b-[2px] border-[#faf3f0] text-[#000000bf] text-[22px] font-[400] hover:text-[#02055d] mr-[18px] pb-[2px] hover:border-b-[2px] hover:border-[#02055d] hover:border-solid ${activeTab === 2?"font-[700] text-[#02055d] border-b-[2px] border-[#02055d] border-solid":""}`}>
                 Monthly Buckets
-              </a>
+              </span>
             </div>
           </div>
+          <div>
+            {
+              activeTab === 1 ?(
           <div className="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col gap-y-[50px] items-center justify-between">
-            <PricingCard isBackground={true}/>
-            <PricingCard isBackground={false} isButton={true}/>
+            <div className="2xl:w-[49%] xl:w-[49%] lg:w-[49%] md:w-[60%] sm:w-[70%] w-[100%]">
+              <PricingCards isBackground={true} />
+            </div>
+            <div className="2xl:w-[49%] xl:w-[49%] lg:w-[49%] md:w-[60%] sm:w-[70%] w-[100%]">
+              <PricingCards isBackground={false} isButton={true} />
+            </div>
+          </div>
+              ):("")
+            }
+            {
+              activeTab === 2?(
+          <div className="flex flex-wrap 2xl:justify-between xl:justify-between lg:justify-between md:justify-between sm:justify-center justify-center items-center gap-y-[40px]">
+            {pricingData.map((item, id) => (
+              <div className="2xl:w-[32%] xl:w-[32%] lg:w-[32%] md:w-[48%] sm:w-[70%] w-[100%] ">
+                <StartedCards
+                  cardTitle={item.title}
+                  cardPara={item.para}
+                  amount={item.amount}
+                  hourly={item.hourly}
+                />
+              </div>
+            ))}
+          </div>
+              ):("")
+            }
+
           </div>
         </div>
       </div>
@@ -49,4 +104,4 @@ function PriceSection() {
   );
 }
 
-export default PriceSection;
+export default Pricing;

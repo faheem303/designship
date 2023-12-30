@@ -12,8 +12,21 @@ body {
 .containers {
   width: 95% !important;
   margin: 0 auto;
+ 
+}
+.filter{
+  filter: grayscale(100%);
+}
+.filter:hover{
+  filter: grayscale(0%);
 }
 
+.cardswrapper :nth-child(4){
+  margin-top: 20rem !important;
+  }
+  .cardswrapper :nth-child(5){
+    margin-bottom: 7rem !important;
+    }
 
 .hero-bg-img {
   background-image: url(./assets/images/64eb7153d04155015b84a72d_Group\ 6858arrows.svg);
@@ -84,8 +97,8 @@ body {
   cursor: pointer;
 }
 .mycard {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 400px;
+  max-width: 400px;
 
   margin: 10px;
   color: white;
@@ -178,6 +191,23 @@ div.marquee>a>img {
 .cardContainer:hover .animteCard{
   transform: translateY(0);
 }
+.link a{
+  color: #8f78f0;
+}
+.cardContainer{
+  overflow: hidden;
+  cursor: pointer;
+  transition: all ease-in-out .5s;
+
+}
+.animteCard{
+  transition: all ease-in-out .5s;
+  transform: translateY(150px);
+
+}
+.cardContainer:hover .animteCard{
+  transform: translateY(0);
+}
 .animteCard i{
   color: #ff70d3;
 
@@ -187,27 +217,57 @@ div.marquee>a>img {
 }
 @keyframes ping {
   75%, 100% {
-    transform: scale(1.5);
+    transform: scale(1.7);
   }
 }
 .animteCard p{
   transition: all ease-in-out .5s;
-  /* color: white; */
   opacity: 0;
+  height: 140px;
 }
 .cardContainer:hover p{
-  /* color: #000; */
   opacity: 1;
+  /* display: block; */
 }
-.slider1:hover button{
-  transition: all ease-in-out 0.2s;
-  background-color: #ff70d3;
+.animate-slide {
+  animation: slide 120s linear infinite;
 }
-.slider2:hover button {
-  background-color:rgb(97, 77, 204);
-  /* background-color: red; */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-.slider3:hover button{
-  background-color:rgb(255, 103, 82)
+.animate-slide2 {
+  animation: slide2 120s linear infinite;
 }
-
+@keyframes slide2 {
+  0% {
+    transform: translateX(0%); 
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.btn2{
+  background-color: rgb(97, 77, 204);
+}
+.animate-slide3 {
+  animation: slide3 120s linear infinite;
+}
+@keyframes slide3 {
+  0% {
+    transform: translateX(0%); 
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.btn3{
+  background-color: rgb(255, 103, 82);
+}
+.servicecls{
+overflow: hidden;
+}

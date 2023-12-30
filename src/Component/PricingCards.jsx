@@ -1,17 +1,20 @@
 import React from "react";
 import Button from "./Button";
+// import { useState } from "react";
 
-function PricingCard({
+function PricingCards({
   isBackground,
   isButton,
 }) {
+  // const [color, setColor] = useState()
+  console.log(isBackground, "isbacgrond");
   return (
     <>
       <div
         className={
-          isBackground === true
-            ? "bg-[#f7f7f7] 2xl:w-[49%] xl:w-[49%] lg:w-[49%] md:w-[60%] sm:w-[70%] w-[100%] rounded-[24px] border-[1px] border-[#d9d9d9] border-solid py-[32px]"
-            : "bg-[#02055d] 2xl:w-[49%] xl:w-[49%] lg:w-[49%] md:w-[60%] sm:w-[70%] w-[100%] rounded-[24px] border-[1px] border-[#d9d9d9] border-solid py-[32px]"
+          isBackground === true 
+            ? "2xl:h-[520px] xl:h-[520px] lg:h-[520px] md:h-[520px] sm:h-[520px] h-[550px] bg-[#f7f7f7] rounded-[24px] border-[1px] border-[#d9d9d9] border-solid py-[32px]"
+            : "2xl:h-[520px] xl:h-[520px] lg:h-[520px] md:h-[520px] sm:h-[520px] h-[550px] bg-[#02055d] rounded-[24px] border-[1px] border-[#d9d9d9] border-solid py-[32px]"
         }
       >
         <div className="w-[90%] mx-auto">
@@ -99,4 +102,4 @@ function PricingCard({
   );
 }
 
-export default PricingCard;
+export default PricingCards;

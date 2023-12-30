@@ -37,19 +37,19 @@ const Carousel = () => {
                 </div>
             </div>
             <div className="product-container" ref={boxRef}>
-                <div className='mycard bg-red-500 ' >
+                <div className='mycard ' >
                     <img src={img1} alt="" />
                 </div>
-                <div className='mycard bg-red-500 ' >
+                <div className='mycard ' >
                     <img src={img2} alt="" />
                 </div>
-                <div className='mycard bg-red-500 ' >
+                <div className='mycard ' >
                     <img src={img1} alt="" />
                 </div>
-                <div className='mycard bg-red-500 ' >
+                <div className='mycard ' >
                     <img src={img2} alt="" />
                 </div>
-                <div className='mycard bg-red-500 ' >
+                <div className='mycard ' >
                     <img src={img1} alt="" />
                 </div>
             </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import SalaryCard from "../Component/SalaryCard";
-import GlassDoor from "../assets/logo/glassdoor.svg";
-import Indeed from "../assets/logo/indeed.svg";
-import SalaryCom from "../assets/logo/salary.svg";
+import GlassDoor from "../assets/svgs/indeed.svg";
+import Indeed from "../assets/svgs/indeed.svg";
+import SalaryCom from "../assets/svgs/salary.svg";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { v4 as uuidv4 } from "uuid";
 
@@ -47,17 +47,17 @@ const card2 = [
   },
 ];
 
-const SalarySection = () => {
+const Salary = () => {
   return (
     <>
       <div>
-        <div className="w-[95%] mx-auto py-[100px]">
-          <h2 className="2xl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[33px] sm:text-[25px] text-[25px] font-[400] 2xl:w-[55%] xl:w-[55%] lg:w-[55%] md:w-[55%] sm:w-[80%] w-[100%] pb-[60px]">
+        <div className="w-[95%] mx-auto">
+          <h2 className="2xl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[33px] sm:text-[25px] text-[25px] font-[400] 2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-[85%] sm:w-[80%] w-[100%] pb-[60px]">
             For reference our standard package works out to{" "}
             <span className="font-[700]">$60k / £48k</span> per year...
           </h2>
-          <div className=" 2xl:flex xl:flex lg:flex md:flex sm:flex block 2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-[80%] sm:w-[80%] w-[100%] mx-auto">
-            <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-[50%] sm:w-[50%] w-[100%] border-[1px] border-[#0000001a] border-solid pb-[40px]">
+          <div className="flex w-[90%] mx-auto">
+            <div className="w-[50%] border-[1px] border-[#0000001a] border-solid pb-[40px]">
               <div className="w-[90%] mx-auto">
                 <div className="flex justify-center border-b-[1px] border-[#0000001a] border-solid py-[20px]">
                   <h3 className="text-center 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[18px] text-[20px] font-[500]">
@@ -85,7 +85,7 @@ const SalarySection = () => {
                 </div>
               </div>
             </div>
-            <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-[50%] sm:w-[50%] w-[100%] border-[1px] border-l-[0] border-[#0000001a] border-solid pb-[40px]">
+            <div className="w-[50%] border-[1px] border-l-[0] border-[#0000001a] border-solid pb-[40px]">
               <div className="w-[90%] mx-auto">
                 <div className="flex justify-center items-center border-b-[1px] border-[#0000001a] border-solid py-[20px]">
                   <h3 className="text-center 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[18px] text-[20px] font-[500]">
@@ -121,4 +121,4 @@ const SalarySection = () => {
   );
 };
 
-export default SalarySection;
+export default Salary;
