@@ -331,7 +331,7 @@ function Portfolio() {
                         toggleDropdown={toggle2}
                     />
                 </div>
-                <div className='cardswrapper grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-x-[5rem] pt-[6rem] '>
+                <div className='cardswrapper grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-x-[7rem] pt-[6rem] '>
                     {
                         filteredProjects.map((project) => (
                             <div className='w-[100%] 2xl:h-[630px] xl:h-[630px] lg:h-[530px] md:h-[500px] sm:h-[auto] h-[auto] mb-[6rem]' key={project.id}>
