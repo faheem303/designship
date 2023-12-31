@@ -22,26 +22,26 @@ function Productpage() {
                         <h4 className='text-[16px] text-gray-400 font-[600] '>Back to all projects</h4>
                     </div>
                 </Link>
-                <div className='pb-[5rem] pt-[4rem] text-center'>
-                    <h3 className='text-[52px] font-[400] leading-[65px]'>Doorway. <br />
+                <div className='2xl:pb-[5rem] 2xl:pt-[4rem] xl:pb-[5rem] xl:pt-[4rem] lg:pb-[5rem] lg:pt-[4rem] md:pb-[5rem] md:pt-[4rem] sm:pb-[5rem] sm:pt-[4rem]   pb-[2rem] pt-[2rem] text-center'>
+                    <h3 className='2xl:text-[52px] xl:text-[52px] lg:text-[52px] md:text-[52px] sm:text-[52px] text-[32px] font-[400] '>Doorway. <br />
                         Digital Business Cards</h3>
                 </div>
-                <div className='flex justify-between py-12'>
+                <div className='flex justify-between 2xl:py-12 xl:py-12 lg:py-12 md:py-12 sm:py-12 py-6'>
                     <div className='w-[20%]'>
-                        <h5 className='text-[16px] text-gray-300 font-[600]'>Industry</h5>
-                        <h4 className='text-[16px] font-[600]'>Software</h4>
+                        <h5 className='2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[12px] text-gray-300 font-[600]'>Industry</h5>
+                        <h4 className='2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[12px] font-[600]'>Software</h4>
                     </div>
                     <div className='w-[37%]'>
-                        <h5 className='text-[16px] text-gray-300 font-[600]'>Services</h5>
-                        <h4 className='text-[16px] font-[600]'>Web design, Elementor website, UI/UX design</h4>
+                        <h5 className='2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[12px] text-gray-300 font-[600]'>Services</h5>
+                        <h4 className='2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[12px] font-[600]'>Web design, Elementor website, UI/UX design</h4>
                     </div>
                     <div className='w-[22%]'>
-                        <h5 className='text-[16px] text-gray-300 font-[600]'>Link</h5>
-                        <h4 className='text-[16px] font-[600]'>View website</h4>
+                        <h5 className='2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[12px] text-gray-300 font-[600]'>Link</h5>
+                        <h4 className='2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[12px] font-[600]'>View website</h4>
                     </div>
                     <div className='w-[20%]'>
-                        <h5 className='text-[16px] text-gray-300 font-[600]'>Share</h5>
-                        <h4 className='text-[16px] font-[600] flex justify-between'><span>Facebook</span> <span>Twitter</span> <span>LinkedIn</span></h4>
+                        <h5 className='2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[12px] text-gray-300 font-[600]'>Share</h5>
+                        <h4 className='2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[12px] block font-[600] flex justify-between flex-wrap'><span>Facebook</span> <span>Twitter</span> <span>LinkedIn</span></h4>
                     </div>
                 </div>
                 <div className='space-y-[5rem] pb-8'>
