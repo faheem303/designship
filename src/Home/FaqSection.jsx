@@ -24,7 +24,7 @@ const FaqItem = ({ question, answer, isOpen, toggleItem }) => {
       {isOpen && (
         <div className="pb-[45px] 2xl:w-[90%] xl:w-[90%] lg:w-[90%] md:w-[90%] sm:w-[100%] w-[100%] mx-auto pr-[10px]">
           <p
-            className="link 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[14px] text-[14px]"
+            className="link 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[16px] sm:text-[16px] text-[16px]"
             dangerouslySetInnerHTML={createMarkup()}
           />
         </div>

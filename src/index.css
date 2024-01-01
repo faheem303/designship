@@ -211,7 +211,7 @@ div.marquee>a>img {
 }
 .animteCard{
   transition: all ease-in-out .5s;
-  transform: translateY(150px);
+  transform: translateY(160px);
 
 }
 .cardContainer:hover .animteCard{
@@ -232,7 +232,7 @@ div.marquee>a>img {
 .animteCard p{
   transition: all ease-in-out .5s;
   opacity: 0;
-  height: 140px;
+  height: 160px;
 }
 .cardContainer:hover p{
   opacity: 1;
