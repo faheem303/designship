@@ -8,10 +8,11 @@ function HeroSection() {
         <div className="pb-12">
             <div className="hero-bg-img">
                 <div className="container mx-auto  py-4 2xl:py-[100px] xl:py-[100px] lg:py-[100px] md:py-[100px] sm:py-6">
-                    <div className="text-center space-y-4">
-                        <h2 className="text-[100px] leading-[112%] font-[700] text-center  text-[#131313]">A new kind of <br />
-                            design agency</h2>
-                        <h4 className="w-[100%] max-w-[480px] m-auto text-[24px] leading-[34px]">A flexible subscription model to fit around your business demands.</h4>
+                    <div className="text-center space-y-8">
+                        <h2 className="text-[80px] leading-[112%] font-[700] text-center  text-[#131313]">One subscription. Unlimited <br />
+                            design & no-code requests</h2>
+                        <h4 className="w-[80%] m-auto text-[24px] leading-[34px]">A flexible and on-code subscription that you can cancel or pause anytime. <br /> Make Unlimited requests, get unlimited revisions. Fast turn
+                        .</h4>
                     </div>
                     <div className="2xl:flex text-center xl:flex lg:flex md:flex sm:flex block justify-center py-12">
                         <button className="py-3 px-7 outline-none rounded-full border border-black hover:bg-black hover:text-white font-[600]">OUR PRICING</button>

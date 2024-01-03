@@ -12,10 +12,10 @@ function AnimateCard({icon, cardHeading, cardPara}) {
               <i className="text-[45px]">{icon}</i>
             </div>
             <div className="animteCard mb-[1rem]">
-              <h2 className="2xl:text-[30px] leading-[34px] pb-[1rem]  font-[circular] xl:text-[30px] lg:text-[30px] md:text-[30px] sm:text-[23px] text-[23px] ">
+              <h2 className="2xl:text-[30px] leading-[34px] pb-[1rem]  xl:text-[30px] lg:text-[30px] md:text-[30px] sm:text-[23px] text-[23px] ">
               {cardHeading}
               </h2>
-              <p className="text-[18px] font-[400] leading-[23px] font-[circular] ">{cardPara}</p>
+              <p className="text-[18px] font-[400] leading-[23px] ">{cardPara}</p>
             </div>
           </div>
         </div>

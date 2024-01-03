@@ -6,21 +6,21 @@ import { v4 as uuidv4 } from "uuid";
 const pricingData = [
   {
     id: uuidv4(),
-    title: "10 hours",
+    title: "Standard ",
     para: "Up to 10 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
     amount: "$1,300",
     hourly: "Pay $130/hr",
   },
   {
     id: uuidv4(),
-    title: "20 hours",
+    title: "Pro",
     para: "Up to 20 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
     amount: "$2,400",
     hourly: "Pay $120/hr",
   },
   {
     id: uuidv4(),
-    title: "40 hours",
+    title: "Enterprise",
     para: "Up to 40 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
     amount: "$4,400",
     hourly: "Pay $110/hr",

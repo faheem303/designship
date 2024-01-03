@@ -48,7 +48,7 @@ function CardSection() {
     <>
       <div>
         <div className="w-[95%] mx-auto py-[100px]">
-          <h2 className="2xl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[33px] sm:text-[25px] text-[25px] font-[400] 2xl:w-[50%] xl:w-[50%] lg:w-[55%] md:w-[70%] font-[circular] sm:w-[80%] w-[100%] pb-[60px]">
+          <h2 className="2xl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[33px] sm:text-[25px] text-[25px] font-[400] 2xl:w-[50%] xl:w-[50%] lg:w-[55%] md:w-[70%]  sm:w-[80%] w-[100%] pb-[60px]">
             What do you get with our design subscription?
           </h2>
           <div className="flex flex-wrap justify-center mx-auto w-[90%]">

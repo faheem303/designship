@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   margin: 0;
-  font-family: 'Open Sauce One', sans-serif;
+  font-family:'Satoshi', sans-serif !important;
   padding: 0px;
 
+}
+.hrcolor{
+  background: black !important;
 }
 
 .containers {

@@ -17,8 +17,8 @@ function Home() {
     <div className="">
       <div className="pt-[6rem]">
         <HeroSection />
-        <ProjectSection />
         <HowItWorkSection />
+        <ProjectSection />
         <Services />
         <CardSection/>
         <YourAssets />
