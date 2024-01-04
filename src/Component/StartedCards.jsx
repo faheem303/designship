@@ -1,15 +1,16 @@
 import React from "react";
 import Button from "./Button";
 // import { useState } from "react";
+import tick from "../assets/images/tick.png"
 
-function StartedCards({ isBackground,cardTitle,cardPara,amount,hourly }) {
+function StartedCards({ isBackground, cardTitle, idata, cardPara, amount, hourly }) {
   // const [color, setColor] = useState()
   console.log(isBackground, "isbacgrond");
   return (
     <>
       <div
         className={
-          "bg-[#f7f7f7] rounded-[24px] border-[1px] border-[#d9d9d9] border-solid py-[32px]"
+          "bg-[#f7f7f7] rounded-[24px] border-[1px] h-[800px] flex flex-col  justify-between border-[#d9d9d9] border-solid py-[32px]"
         }
       >
         <div className="px-[32px]">
@@ -47,17 +48,32 @@ function StartedCards({ isBackground,cardTitle,cardPara,amount,hourly }) {
                 </h5>
               </div>
             </div>
-            <div className="flex justify-center items-center">
-              <Button
-                className={
-                  isBackground === true
-                    ? "bg-[#02055d] h-[46px] 2xl:px-[45px] xl:px-[45px] lg:px-[45px] md:px-[45px] sm:px-[45px] px-[32px]  text=[1rem] text-[#fff] rounded-[10px] font-[700] transition delay-150 duration-200 ease-in hover:bg-[#ff6752] hover:translate-y-[-3px]"
-                    : "bg-[#ff6752] h-[46px] 2xl:px-[45px] xl:px-[45px] lg:px-[45px] md:px-[45px] sm:px-[45px] px-[32px]  text=[1rem] text-[#fff] rounded-[10px] font-[700] transition delay-100 duration-200 ease-in hover:bg-[#02055d] hover:translate-y-[-3px]"
+            <div className="space-y-6">
+              <div className="space-y-2">
+                {
+                  idata && idata.map((idataItem) => (
+                    <div key={idataItem.id} className="flex items-center space-x-2">
+                      <img src={tick} className="w-[20px] h-[20px]" alt="" />
+                      <p>{idataItem.pripara}</p>
+                    </div>
+                  ))
                 }
-                btnText={"Get Started"}
-              />
+              </div>
+              
             </div>
           </div>
+        </div>
+        <div>
+        <div className="flex justify-center items-center">
+                <Button
+                  className={
+                    isBackground === true
+                      ? "bg-[#02055d] h-[46px] 2xl:px-[45px] xl:px-[45px] lg:px-[45px] md:px-[45px] sm:px-[45px] px-[32px]  text=[1rem] text-[#fff] rounded-[10px] font-[700] transition delay-150 duration-200 ease-in hover:bg-[#ff6752] hover:translate-y-[-3px]"
+                      : "bg-[#ff6752] h-[46px] 2xl:px-[45px] xl:px-[45px] lg:px-[45px] md:px-[45px] sm:px-[45px] px-[32px]  text=[1rem] text-[#fff] rounded-[10px] font-[700] transition delay-100 duration-200 ease-in hover:bg-[#02055d] hover:translate-y-[-3px]"
+                  }
+                  btnText={"Get Started"}
+                />
+              </div>
         </div>
       </div>
     </>

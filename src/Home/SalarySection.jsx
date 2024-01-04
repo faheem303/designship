@@ -3,6 +3,8 @@ import SalaryCard from "../Component/SalaryCard";
 import GlassDoor from "../assets/svgs/indeed.svg";
 import Indeed from "../assets/svgs/indeed.svg";
 import SalaryCom from "../assets/svgs/salary.svg";
+import freel from "../assets/images/freel.png"
+
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { v4 as uuidv4 } from "uuid";
 
@@ -51,7 +53,8 @@ const Salary = () => {
   return (
     <>
       <div>
-        <div className="w-[95%] mx-auto">
+        <div className="w-[95%] mx-auto pb-[100px]">
+          <div>
           <h2 className="2xl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[33px] sm:text-[25px] text-[25px] font-[400] 2xl:w-[80%] xl:w-[80%] lg:w-[80%] md:w-[85%] sm:w-[80%] w-[100%] pb-[60px]">
             For reference our standard package works out to{" "}
             <span className="font-[700]">$60k / £48k</span> per year...
@@ -114,6 +117,7 @@ const Salary = () => {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

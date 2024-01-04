@@ -38,7 +38,7 @@ function ProjectCard({ Cardclassmain, Cardimg, btntext1, btntext2, btntext3, foo
                    
                   
                     <div className="flex justify-between">
-                        <div><img className="w-[85px]" src={footerLogo} alt="" /></div>
+                        <div><img className="w-[85px] " src={footerLogo} alt="" /></div>
                         <div className="pb-4">
                             <h4 className="text-[16px] text-gray-500">{para}<span className="text-[16px] text-gray-500 italic">Case Study coming soon!</span> </h4>
                         </div>

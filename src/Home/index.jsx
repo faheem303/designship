@@ -11,6 +11,7 @@ import FaqSection from "./FaqSection";
 import ProjectSection from "./ProjectSection";
 import Services from "./ServicesSection";
 import Salary from "./SalarySection";
+import OverpaySection from "./OverpaySection";
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
         <NeedaStartSection />
         <PriceSection/>
         <Salary/>
+        <OverpaySection />
         <BrandLogos />
         <FaqSection/>
       </div>

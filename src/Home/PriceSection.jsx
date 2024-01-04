@@ -10,6 +10,44 @@ const pricingData = [
     para: "Up to 10 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
     amount: "$1,300",
     hourly: "Pay $130/hr",
+    idata : [
+      {
+        id: uuidv4(),
+        pripara:"One task at a time",
+      },
+      {
+        id: uuidv4(),
+        pripara:"1 designer dedicated to your project",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Dedicated project manager",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Unlimited tasks",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Unlimited UI UX design",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Unlimited revisions",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Unlimited users",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Average 48 hour delivery",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Webflow developer (Additional $500)",
+      },
+    ]
   },
   {
     id: uuidv4(),
@@ -17,6 +55,48 @@ const pricingData = [
     para: "Up to 20 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
     amount: "$2,400",
     hourly: "Pay $120/hr",
+    idata : [
+      {
+        id: uuidv4(),
+        pripara:"Two tasks at a time",
+      },
+      {
+        id: uuidv4(),
+        pripara:"2 designers dedicated to your project",
+      },
+      {
+        id: uuidv4(),
+        pripara:"1 Webflow developer",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Unlimited graphic animation",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Dedicated project manager",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Unlimited tasks",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Unlimited UI UX design",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Unlimited revisions",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Unlimited users",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Average 24 ~ 48 hour delivery",
+      },
+    ]
   },
   {
     id: uuidv4(),
@@ -24,6 +104,37 @@ const pricingData = [
     para: "Up to 40 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
     amount: "$4,400",
     hourly: "Pay $110/hr",
+    idata : [
+      {
+        id: uuidv4(),
+        pripara:"More than two requests at a time",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Everything in PRO",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Dedicated designer",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Customised solution",
+      },
+      {
+        id: uuidv4(),
+        pripara:"White glove onboarding",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Priority phone support",
+      },
+      {
+        id: uuidv4(),
+        pripara:"Pay by invoice option",
+      },
+      
+    ]
   },
 ];
 
@@ -86,6 +197,7 @@ function Pricing() {
             {pricingData.map((item, id) => (
               <div className="2xl:w-[32%] xl:w-[32%] lg:w-[32%] md:w-[48%] sm:w-[70%] w-[100%] ">
                 <StartedCards
+                idata={item.idata}
                   cardTitle={item.title}
                   cardPara={item.para}
                   amount={item.amount}
