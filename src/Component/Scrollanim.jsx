@@ -44,7 +44,7 @@ const ScrollAni = () => {
   }, []);
 
   return (
-    <div className='space-y-8 2xl:py-12 xl:py-12 lg:py-12 md:py-12 sm:py-6 py-4 wrapper relative 2xl:h-[1300px] xl:h-[1100px] lg:h-[852px] md:h-[72vh] sm:h-[52vh]  h-[310px] overflow-hidden' ref={wrapperRef}>
+    <div className='2xl:space-y-8 xl:space-y-8 lg:space-y-8 mg:space-y-8 sm:space-y-8 space-y-0 2xl:py-12 xl:py-12 lg:py-12 md:py-12 sm:py-6 py-4 wrapper relative 2xl:h-[1300px] xl:h-[1100px] lg:h-[852px] md:h-[72vh] sm:h-[52vh]  h-[310px] overflow-hidden' ref={wrapperRef}>
       <div className='flex items-end gap-6 pt-8 row-one 2xl:w-[130%] xl:w-[130%] lg:w-[120%] md:w-[115%] sm:w-[110%] w-[106%]  absolute 2xl:left-[-150px] xl:left-[-150px] lg:left-[-90px] md:left-[-60px] sm:left-[-27px] left-[-8px]' ref={rowOneRef} >
         <div className='2xl:h-[300px] xl:h-[300px] lg:h-[300px] md:h-[auto] sm:h-[auto] h-[auto] w-[600px] flex items-end'><img className='rounded-[20px] overflow w-[100%]' src={img1} alt="" /></div>
         <div className=' w-[1000px]  flex items-end'><img className='rounded-[20px] w-[100%]' src={img2} alt="" /></div>
