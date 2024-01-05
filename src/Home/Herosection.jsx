@@ -1,5 +1,5 @@
 import React from "react";
-import call from "../assets/icons/call-16.png"
+import call from "../assets/images/call.gif"
 import img from "../assets/images/bgImg.png"
 import ScrollAni from "../Component/Scrollanim";
 
@@ -15,7 +15,7 @@ function HeroSection() {
                     </div>
                     <div className="2xl:flex text-center xl:flex lg:flex md:flex sm:flex block justify-center py-12">
                         <button className="py-3 px-7 outline-none rounded-full border border-black hover:bg-black hover:text-white font-[600]">OUR PRICING</button>
-                        <p className=" py-3 px-7 text-[#5e5e5e] text-[15px] flex items-center justify-center  m-0 hover:text-gray-400 font-[300] "> <img className=" pb-1 px-3" src={call} alt="" /> SCHEDULE A CALL</p>
+                        <p className=" py-3 px-7 text-[#5e5e5e] text-[15px] flex items-center justify-center  m-0 hover:text-gray-400 font-[300] "> <img className=" pb-1 pr-2 w- h-[28px]" src={call} alt="" /> SCHEDULE A CALL</p>
                     </div>
                 </div>
             </div>
