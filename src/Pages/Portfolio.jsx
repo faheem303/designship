@@ -118,6 +118,24 @@ const initialProjects = [
                 service: 'Print Design',
                 industry: 'Music',
             },
+            {
+                id: 13,
+                imgshow: img3,
+                service: 'Select service',
+                industry: 'Select industry',
+                showtitel: "Consulting",
+                showsubtitel: "Trippant",
+            },
+            {
+                id: 14,
+                imgshow: img1,
+                service: 'Select service',
+                industry: 'Select industry',
+                showtitel: "Recruitment",
+                subtitel2: "Stott and May",
+                showsubtitel:"Hugh Fraser, Doorway",
+
+            },
         ]
     },
     {
@@ -312,7 +330,7 @@ function Portfolio() {
 
 
     return (
-        <div className='bg-white '>
+        <div className='bg-white z-[1]'>
             <div className="py-[6rem] containers  max-w-[1410px] w-[95%]">
                 <div className='text-center pt-[5rem] pb-[3.3rem]'>
                     <h3 className='text-[52px]'>Featured projects</h3>
@@ -331,7 +349,7 @@ function Portfolio() {
                         toggleDropdown={toggle2}
                     />
                 </div>
-                <div className='cardswrapper grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-x-[7rem] pt-[6rem] '>
+                <div className='cardswrapper relative grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-x-[7rem] pt-[6rem] '>
                     {
                         filteredProjects.map((project) => (
                             <div className='w-[100%] 2xl:h-[630px] xl:h-[630px] lg:h-[530px] md:h-[500px] sm:h-[auto] h-[auto] mb-[6rem]' key={project.id}>
@@ -347,7 +365,7 @@ function Portfolio() {
                     }
 
                 </div>
-                <div className='flex justify-center '>
+                <div className='flex justify-center absolute top-[70%] left-[46%]'>
                     <button
                         className="py-3 px-7 rounded-[14px] border border-black hover:bg-black hover:text-white font-[600]"
                         onClick={handleLoadMore}

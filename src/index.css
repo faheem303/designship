@@ -29,6 +29,14 @@ body {
 .cardswrapper :nth-child(4){
   margin-top: 20rem !important;
   }
+  .cardswrapper :nth-child(6){
+  margin-top: 24rem !important;
+
+  }
+  .cardswrapper :nth-child(7){
+    margin-top: -16rem !important;
+  
+    }
   @media only screen and (max-width: 600px) {
     .cardswrapper :nth-child(4) {
       margin-top: 3rem !important;
@@ -38,7 +46,7 @@ body {
       }
   }
   .cardswrapper :nth-child(5){
-    margin-bottom: 7rem !important;
+    margin-bottom: -4rem !important;
     }
    
 

@@ -30,7 +30,7 @@ const FeaturedCard = ({ data, showMoreProjects, classname }) => {
             }
 
             {showMoreProjects && (data.showtitel || data.showsubtitel) && (
-                <div className='space-y-8 pt-[6rem]'>
+                <div className=' space-y-8 '>
                     <img src={data.imgshow} alt="" />
                     <div className='space-y-1'>
                         <p className='text-[16px] font-[500]'>{data.showtitel}</p>
@@ -39,7 +39,7 @@ const FeaturedCard = ({ data, showMoreProjects, classname }) => {
                 </div>
             )}
             {showMoreProjects && (data.showtitel2 || data.showsubtitel2) && (
-                <div className='space-y-[6rem] pt-[6rem]'>
+                <div className='space-y-[6rem]'>
                     <div className='space-y-3'>
                         <p className='text-[18px] font-[500] '>{data.showsubtitel2}</p>
                         <h3 className='text-[16px] font-[600] text-gray-500'>{data.showtitel}</h3>

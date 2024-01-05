@@ -8,7 +8,7 @@ const Dropdown = ({ options, handleSelection, selectedOption, toggleDropdown }) 
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="relative w-[20rem]">
+        <div className="relative w-[20rem] z-[2]">
             <button
                 onClick={() => {
                     setOpen(!open);
