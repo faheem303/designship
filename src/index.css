@@ -9,6 +9,7 @@ body {
   padding: 0px;
 
 }
+
 .hrcolor{
   background: black !important;
 }
@@ -64,6 +65,12 @@ body {
     display: flex;
     overflow: hidden;
 }
+.fstbox{
+  transform: translateX(-10%);
+}
+.sndbox{
+  transform: translateX(-1%);
+}
 .gallery{
 
     will-change: transform;
@@ -112,8 +119,7 @@ body {
 .mycard {
   min-width: 400px;
   max-width: 400px;
-
-  margin: 10px;
+  padding: 10px;
   color: white;
 }
 
@@ -243,7 +249,7 @@ div.marquee>a>img {
   /* display: block; */
 }
 .animate-slide {
-  animation: slide 120s linear infinite;
+  animation: slide 130s linear infinite;
 }
 @keyframes slide {
   0% {
@@ -268,7 +274,7 @@ div.marquee>a>img {
   background-color: rgb(97, 77, 204);
 }
 .animate-slide3 {
-  animation: slide3 120s linear infinite;
+  animation: slide3 110s linear infinite;
 }
 @keyframes slide3 {
   0% {

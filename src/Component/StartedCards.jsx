@@ -3,14 +3,14 @@ import Button from "./Button";
 // import { useState } from "react";
 import tick from "../assets/images/tick.png"
 
-function StartedCards({ isBackground, cardTitle, idata, cardPara, amount, hourly }) {
+function StartedCards({ isBackground,subTitleCard, cardTitle, idata, cardPara, amount, hourly }) {
   // const [color, setColor] = useState()
   console.log(isBackground, "isbacgrond");
   return (
     <>
       <div
         className={
-          "bg-[#f7f7f7] rounded-[24px] border-[1px] h-[800px] flex flex-col  justify-between border-[#d9d9d9] border-solid py-[32px]"
+          "bg-[#f7f7f7] rounded-[24px] border-[1px] h-[810px] flex flex-col  justify-between border-[#d9d9d9] border-solid py-[32px]"
         }
       >
         <div className="px-[32px]">
@@ -20,12 +20,13 @@ function StartedCards({ isBackground, cardTitle, idata, cardPara, amount, hourly
                 "border-b-[1px] border-[#d9d9d9] border-solid pb-[32px] mb-[32px]"
               }
             >
-              <div className="flex items-center justify-between mb-[8px]">
+              <div className="mb-[15px]">
                 <h3
                   className={
                     "uppercase text-[#02055d] font-[700] text-[1.87rem] tracking-[1px]"
                   }
                 >{cardTitle}</h3>
+                <h5>{subTitleCard}</h5>
               </div>
               <p
                 className={"text-[#000000bf] font-[400] text-[1rem] mb-[16px]"}
@@ -37,7 +38,7 @@ function StartedCards({ isBackground, cardTitle, idata, cardPara, amount, hourly
               }
             >
               <div className="flex justify-between items-center">
-                <h2 className={"text-[#02055d] font-[700] 2xl:text-[40px] xl:text-[40px] lg:text-[30px] md:text-[35px] sm:text-[40px] text-[30px]"}>
+                <h2 className={"text-[#02055d] leading-[30px] font-[700] 2xl:text-[40px] xl:text-[40px] lg:text-[30px] md:text-[35px] sm:text-[40px] text-[30px]"}>
                   {amount}
                   <span className={"text-[#02055d] font-[700] 2x:text-[16px] xl:text-[16px] lg:text-[14px] md:text-[14px] sm:text-[16px] text-[14px]"}>
                     /mo
@@ -46,6 +47,9 @@ function StartedCards({ isBackground, cardTitle, idata, cardPara, amount, hourly
                 <h5 className={"text-[#000000bf] font-[400] 2x:text-[16px] xl:text-[16px] lg:text-[14px] md:text-[14px] sm:text-[16px] text-[14px]"}>
                   {hourly}
                 </h5>
+              </div>
+              <div>
+                <h5>Cancel anytime</h5>
               </div>
             </div>
             <div className="space-y-6">

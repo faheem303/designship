@@ -47,11 +47,11 @@ const btnData1 = [
 const btnData2 = [
   {
     id: uuidv4(),
-    btnText: "EB DESIGN",
+    btnText: "WEB DESIGN",
   },
   {
     id: uuidv4(),
-    btnText: "WEB DESIGN",
+    btnText: "BRANGING",
   },
   {
     id: uuidv4(),
@@ -196,14 +196,14 @@ function Services() {
         </div>
         <div className="servicecls pt-[95px] flex flex-col gap-[34px]">
           <div
-            className={`slider1 w-[5000px] ${isAnimating ? "animate-slide" : ""}`}
+            className={`slider1 w-[3810px] ${isAnimating ? "animate-slide" : ""}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="flex gap-[32px] startSlide">
+            <div className="flex gap-x-10 startSlide">
               {btnData1.map((item, id) => (
                 <Button
-                  className={`bg-[#d9d9d9] px-[50px]  text-[24px] h-[75px] text-[#FFF] font-[500] leading-[29px] rounded-[100px] ${isAnimating ? "bg-[#ff70d3] w-[100%]":"bg-[#d9d9d9] w-[100%]"}`}
+                  className={`bg-[#d9d9d9] px-[48px] py-[18px]  text-[24px]  text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating ? "bg-[#ff70d3]":"bg-[#d9d9d9] "}`}
                   btnText={item.btnText}
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
@@ -212,14 +212,14 @@ function Services() {
             </div>
           </div>
           <div
-            className={`slider2 w-[5000px] ${isAnimating2 ? "animate-slide2" : ""}`}
+            className={`slider2 w-[3646px] ${isAnimating2 ? "animate-slide2" : ""}`}
             onMouseEnter={handleMouseEnter2}
             onMouseLeave={handleMouseLeave2}
           >
-            <div className="flex gap-[32px] startSlide">
-              {btnData3.map((item, id) => (
+            <div className="flex gap-x-10 startSlide">
+              {btnData2.map((item, id) => (
                 <Button
-                  className={`bg-[#d9d9d9] px-[50px]  text-[24px] h-[75px]  text-[#FFF] font-[500] leading-[29px] rounded-[100px] ${isAnimating2 ? "btn2 w-[100%]":"bg-[#d9d9d9] w-[100%]"}`}
+                  className={`bg-[#d9d9d9] px-[48px] py-[18px] text-[24px]  text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating2 ? "btn2 ":"bg-[#d9d9d9] "}`}
                   btnText={item.btnText}
                   onMouseEnter={handleMouseEnter2}
                   onMouseLeave={handleMouseLeave2}
@@ -228,14 +228,14 @@ function Services() {
             </div>
           </div>
           <div
-            className={`slider3 w-[5000px] ${isAnimating3 ? "animate-slide3" : ""}`}
+            className={`slider3 w-[4346px] ${isAnimating3 ? "animate-slide3" : ""}`}
             onMouseEnter={handleMouseEnter3}
             onMouseLeave={handleMouseLeave3}
           >
-            <div className="flex gap-[32px] startSlide">
+            <div className="flex gap-x-10 startSlide">
               {btnData3.map((item, id) => (
                 <Button
-                  className={`bg-[#d9d9d9] px-[50px]  text-[24px] h-[75px]  text-[#FFF] font-[500] leading-[29px] rounded-[100px] ${isAnimating3 ? "btn3 w-[100%]":"bg-[#d9d9d9] w-[100%]"}`}
+                  className={`bg-[#d9d9d9] px-[48px] py-[18px] text-[24px]   text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating3 ? "btn3 ":"bg-[#d9d9d9] "}`}
                   btnText={item.btnText}
                   onMouseEnter={handleMouseEnter3}
                   onMouseLeave={handleMouseLeave3}

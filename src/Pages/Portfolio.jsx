@@ -313,7 +313,7 @@ function Portfolio() {
 
     return (
         <div className='bg-white '>
-            <div className="py-[6rem] containers  max-w-[1340px] w-[95%]">
+            <div className="py-[6rem] containers  max-w-[1410px] w-[95%]">
                 <div className='text-center pt-[5rem] pb-[3.3rem]'>
                     <h3 className='text-[52px]'>Featured projects</h3>
                 </div>

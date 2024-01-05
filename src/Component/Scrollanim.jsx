@@ -19,9 +19,9 @@ const ScrollAni = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(rowOneRef.current, {
-      x: 80, // Adjust the distance to move the row
+      x: 100, // Adjust the distance to move the row
       ease: 'none',
-      duration: 0.8, // Adjust the duration to change the speed
+      duration: 1.5, // Adjust the duration to change the speed
       scrollTrigger: {
         trigger: wrapperRef.current,
         start: 'top 90%',
@@ -31,9 +31,9 @@ const ScrollAni = () => {
     });
 
     gsap.to(rowTwoRef.current, {
-      x: -80, // Adjust the distance to move the row
+      x: -100, // Adjust the distance to move the row
       ease: 'none',
-      duration: 0.8, // Adjust the duration to change the speed
+      duration: 1.5, 
       scrollTrigger: {
         trigger: wrapperRef.current,
         start: 'top 90%',
@@ -44,16 +44,20 @@ const ScrollAni = () => {
   }, []);
 
   return (
-    <div className='2xl:space-y-8 xl:space-y-8 lg:space-y-8 mg:space-y-8 sm:space-y-8 space-y-0 2xl:py-12 xl:py-12 lg:py-12 md:py-12 sm:py-6 py-4 wrapper relative 2xl:h-[1300px] xl:h-[1100px] lg:h-[852px] md:h-[72vh] sm:h-[52vh]  h-[310px] overflow-hidden' ref={wrapperRef}>
-      <div className='flex items-end gap-6 pt-8 row-one 2xl:w-[130%] xl:w-[130%] lg:w-[120%] md:w-[115%] sm:w-[110%] w-[106%]  absolute 2xl:left-[-150px] xl:left-[-150px] lg:left-[-90px] md:left-[-60px] sm:left-[-27px] left-[-8px]' ref={rowOneRef} >
-        <div className='2xl:h-[300px] xl:h-[300px] lg:h-[300px] md:h-[auto] sm:h-[auto] h-[auto] w-[600px] flex items-end'><img className='rounded-[20px] overflow w-[100%]' src={img1} alt="" /></div>
-        <div className=' w-[1000px]  flex items-end'><img className='rounded-[20px] w-[100%]' src={img2} alt="" /></div>
-        <div className='2xl:h-[300px] xl:h-[300px] overflow lg:h-[300px] md:h-[auto] sm:h-[auto] h-[auto] w-[700px] flex items-end'><img className='rounded-[20px] w-[100%]' src={img3} alt="" /></div>
+    <div className=' 2xl:py-12 xl:py-12 lg:py-12 md:py-12 sm:py-6 py-4 wrapper  overflow-hidden' ref={wrapperRef}>
+      <div className='flex items-end justify-center gap-6 pt-8 row-one 2xl:w-[130%] xl:w-[130%] lg:w-[120%] md:w-[115%] sm:w-[110%] w-[106%] ' ref={rowOneRef} >
+       <div className='flex fstbox gap-6'>
+       <div className='w-[28%]  flex items-end'><img className='rounded-[20px] h-[auto] max-h-[280px] overflow w-[100%]' src={img1} alt="" /></div>
+        <div className='w-[44%]  flex items-end'><img className='rounded-[20px] w-[100%]' src={img2} alt="" /></div>
+        <div className='w-[28%] flex items-end'><img className='rounded-[20px] h-[auto] max-h-[280px] w-[100%]' src={img3} alt="" /></div>
+       </div>
       </div>
-      <div className='flex items-start gap-6 pt-8 row-two 2xl:w-[130%] xl:w-[130%] lg:w-[120%] md:w-[115%] sm:w-[110%] w-[106%]  absolute 2xl:left-[-150px] xl:left-[-150px] lg:left-[-90px] md:left-[-60px] sm:left-[-27px] left-[-8px] bottom-[0px]' ref={rowTwoRef} >
-        <div className='2xl:h-[300px] xl:h-[300px] lg:h-[300px] md:h-[auto] sm:h-[auto] h-[auto] w-[600px] flex items-start'><img className='rounded-[20px] overflow w-[100%]' src={img4} alt="" /></div>
-        <div className=' w-[1000px]  flex items-start'><img className='rounded-[20px] w-[100%]' src={img5} alt="" /></div>
-        <div className='2xl:h-[300px] xl:h-[300px] overflow lg:h-[300px] md:h-[auto] sm:h-[auto] h-[auto] w-[700px] flex items-start'><img className='rounded-[20px] w-[100%]' src={img6} alt="" /></div>
+      <div className='flex items-start justify-center gap-6 pt-8 row-two 2xl:w-[130%] xl:w-[130%] lg:w-[120%] md:w-[115%] sm:w-[110%] w-[106%]  ' ref={rowTwoRef} >
+        <div className='flex sndbox gap-6'>
+        <div className='w-[28%] flex items-start'><img className='rounded-[20px] h-[auto] max-h-[280px] overflow w-[100%]' src={img4} alt="" /></div>
+        <div className='w-[44%]  flex items-start'><img className='rounded-[20px] w-[100%]' src={img5} alt="" /></div>
+        <div className='w-[28%] flex items-start'><img className='rounded-[20px] h-[auto] max-h-[280px] w-[100%]' src={img6} alt="" /></div>
+        </div>
       </div>
 
 

@@ -13,8 +13,8 @@ function PricingCards({
       <div
         className={
           isBackground === true 
-            ? "2xl:h-[520px] xl:h-[520px] lg:h-[520px] md:h-[520px] sm:h-[520px] h-[550px] bg-[#f7f7f7] rounded-[24px] border-[1px] border-[#d9d9d9] border-solid py-[32px]"
-            : "2xl:h-[520px] xl:h-[520px] lg:h-[520px] md:h-[520px] sm:h-[520px] h-[550px] bg-[#02055d] rounded-[24px] border-[1px] border-[#d9d9d9] border-solid py-[32px]"
+            ? "2xl:h-[480px] xl:h-[465px] lg:h-[490px] md:h-[490px] sm:h-[490px] h-[495px] bg-[#f7f7f7] rounded-[24px] border-[1px] border-[#d9d9d9] border-solid py-[32px]"
+            : "2xl:h-[480px] xl:h-[465px] lg:h-[490px] md:h-[490px] sm:h-[490px] h-[495px] bg-[#02055d] rounded-[24px] border-[1px] border-[#d9d9d9] border-solid py-[32px]"
         }
       >
         <div className="w-[90%] mx-auto">
@@ -28,8 +28,8 @@ function PricingCards({
                 <h3
                   className={
                     isBackground === true
-                      ? "uppercase text-[#02055d] font-[700] text-[1.87rem] tracking-[1px]"
-                      : "uppercase text-[#fff] font-[700] text-[1.87rem] tracking-[1px]"
+                      ? " text-[#02055d] font-[700] text-[1.87rem] tracking-[1px]"
+                      : " text-[#fff] font-[700] text-[1.87rem] tracking-[1px]"
                   }
                 >
                   {isBackground === true?"Part time":"Full time"}

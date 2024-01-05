@@ -7,9 +7,9 @@ const pricingData = [
   {
     id: uuidv4(),
     title: "Standard ",
-    para: "Up to 10 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
-    amount: "$1,300",
-    hourly: "Pay $130/hr",
+    subTitleCard:"Design Only",
+    para: "Best if you have your own developer and regularly need help with design.",
+    amount: "$2,999",
     idata : [
       {
         id: uuidv4(),
@@ -52,9 +52,9 @@ const pricingData = [
   {
     id: uuidv4(),
     title: "Pro",
-    para: "Up to 20 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
-    amount: "$2,400",
-    hourly: "Pay $120/hr",
+    subTitleCard:"Design & Development",
+    para: "Best if you need beautiful designs & Webflow development on a regularly.",
+    amount: "$4,599",
     idata : [
       {
         id: uuidv4(),
@@ -101,9 +101,9 @@ const pricingData = [
   {
     id: uuidv4(),
     title: "Enterprise",
-    para: "Up to 40 hours per month of Elastico time for your team to use however you need. Includes access to every service that we offer.",
-    amount: "$4,400",
-    hourly: "Pay $110/hr",
+    subTitleCard:"Priority Design, Development & Management",
+    para: "More requests, all services and even better support, always at your disposal.",
+    amount: "Contact Us",
     idata : [
       {
         id: uuidv4(),
@@ -197,6 +197,7 @@ function Pricing() {
             {pricingData.map((item, id) => (
               <div className="2xl:w-[32%] xl:w-[32%] lg:w-[32%] md:w-[48%] sm:w-[70%] w-[100%] ">
                 <StartedCards
+                subTitleCard={item.subTitleCard}
                 idata={item.idata}
                   cardTitle={item.title}
                   cardPara={item.para}

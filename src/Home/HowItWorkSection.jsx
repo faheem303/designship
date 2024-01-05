@@ -21,9 +21,9 @@ function HowItWorkSection() {
                                 <p className="leading-[18px] text-[#8d8d8d] font-[300]">We'll set up your design board so you can easily manage your requests and designs.</p>
                             </div>
                         </div>
-                        <div className=" w-[100%] 2xl:w-[35%] xl:w-[35%] lg:w-[35%] md:w-[100%] sm-[100%] pt-[3rem] flex space-x-2">
+                        <div className=" w-[100%] 2xl:w-[35%] xl:w-[35%] lg:w-[35%] md:w-[100%] sm-[100%] flex items-center space-x-2">
                             <div>
-                                <img src={dots} className="h-[350px] w-[12px] pt-3" alt="" />
+                                <img src={dots} className="h-[350px] w-[12px] " alt="" />
                             </div>
                             <div className="">
                                 <div className="pb-[5.5rem]">

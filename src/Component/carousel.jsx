@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState  } from 'react';
 import img1 from "../assets/images/Web-design-1-677x1024.webp"
 import img2 from "../assets/images/Packaging-1-677x1024.webp"
 import cro1 from "../assets/images/cro (1).jpg"
@@ -10,6 +10,9 @@ import left from "../assets/icons/left.png"
 import right from "../assets/icons/right.png"
 
 const Carousel = () => {
+    const [isDragging, setIsDragging] = useState(false);
+    const [startX, setStartX] = useState(0);
+    const [scrollLeft, setScrollLeft] = useState(0);
     const boxRef = useRef(null);
 
     const btnpressprev = () => {
@@ -29,6 +32,23 @@ const Carousel = () => {
             console.log(width);
         }
     }
+    const handleMouseDown = (e) => {
+        setIsDragging(true);
+        setStartX(e.pageX - boxRef.current.offsetLeft);
+        setScrollLeft(boxRef.current.scrollLeft);
+    };
+
+    const handleMouseMove = (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - boxRef.current.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust the scrolling speed
+        boxRef.current.scrollLeft = scrollLeft - walk;
+    };
+
+    const handleMouseUp = () => {
+        setIsDragging(false);
+    };
 
     return (
         <div className="product-carousel">
@@ -41,7 +61,14 @@ const Carousel = () => {
                     <button className="next-btn" onClick={btnpressnext}><img src={right} alt="" /></button>
                 </div>
             </div>
-            <div className="product-container" ref={boxRef}>
+            <div 
+            className="product-container"
+            ref={boxRef}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
+            >
                 <div className='mycard relative' >
                     <img src={img1} alt="" />
                     <h3 className='absolute bottom-[6%] text-[24px] flex items-center font-[500]' > <hr className='w-[50px] h-[1px] text-white mr-3' /> Website Design</h3>
