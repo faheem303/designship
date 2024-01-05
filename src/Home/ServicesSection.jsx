@@ -195,30 +195,51 @@ function Services() {
           </div>
         </div>
         <div className="servicecls pt-[95px] flex flex-col gap-[34px]">
+        <div
+  className={`slider1 w-[7810px] ${isAnimating ? "animate-slide" : ""}`}
+  onMouseEnter={handleMouseEnter}
+  onMouseLeave={handleMouseLeave}
+>
+  <div className="flex gap-x-10 startSlide">
+    {btnData1.map((item, id) => (
+      <Button
+        key={id}
+        className={`bg-[#d9d9d9] px-[48px] py-[18px] text-[24px]  text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating ? "btn1 ":"bg-[#d9d9d9] "}`}
+        btnText={item.btnText}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      />
+    ))}
+    {btnData1.map((item, id) => (
+      <Button
+      key={`duplicate_${id}`}
+      className={`bg-[#d9d9d9] px-[48px] py-[18px] text-[24px]  text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating ? "btn1 ":"bg-[#d9d9d9] "}`}
+        btnText={item.btnText}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      />
+    ))}
+  </div>
+</div>
+
           <div
-            className={`slider1 w-[3810px] ${isAnimating ? "animate-slide" : ""}`}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className="flex gap-x-10 startSlide">
-              {btnData1.map((item, id) => (
-                <Button
-                  className={`bg-[#d9d9d9] px-[48px] py-[18px]  text-[24px]  text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating ? "bg-[#ff70d3]":"bg-[#d9d9d9] "}`}
-                  btnText={item.btnText}
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                />
-              ))}
-            </div>
-          </div>
-          <div
-            className={`slider2 w-[3646px] ${isAnimating2 ? "animate-slide2" : ""}`}
+            className={`slider2 w-[7646px] ${isAnimating2 ? "animate-slide2" : ""}`}
             onMouseEnter={handleMouseEnter2}
             onMouseLeave={handleMouseLeave2}
           >
             <div className="flex gap-x-10 startSlide">
               {btnData2.map((item, id) => (
                 <Button
+                  key={id}
+                  className={`bg-[#d9d9d9] px-[48px] py-[18px] text-[24px]  text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating2 ? "btn2 ":"bg-[#d9d9d9] "}`}
+                  btnText={item.btnText}
+                  onMouseEnter={handleMouseEnter2}
+                  onMouseLeave={handleMouseLeave2}
+                />
+              ))}
+                {btnData2.map((item, id) => (
+                <Button
+                key={`duplicate_${id}`}
                   className={`bg-[#d9d9d9] px-[48px] py-[18px] text-[24px]  text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating2 ? "btn2 ":"bg-[#d9d9d9] "}`}
                   btnText={item.btnText}
                   onMouseEnter={handleMouseEnter2}
@@ -228,13 +249,23 @@ function Services() {
             </div>
           </div>
           <div
-            className={`slider3 w-[4346px] ${isAnimating3 ? "animate-slide3" : ""}`}
+            className={`slider3 w-[8346px] ${isAnimating3 ? "animate-slide3" : ""}`}
             onMouseEnter={handleMouseEnter3}
             onMouseLeave={handleMouseLeave3}
           >
             <div className="flex gap-x-10 startSlide">
               {btnData3.map((item, id) => (
                 <Button
+                key={id}
+                  className={`bg-[#d9d9d9] px-[48px] py-[18px] text-[24px]   text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating3 ? "btn3 ":"bg-[#d9d9d9] "}`}
+                  btnText={item.btnText}
+                  onMouseEnter={handleMouseEnter3}
+                  onMouseLeave={handleMouseLeave3}
+                />
+              ))}
+               {btnData3.map((item, id) => (
+                <Button
+                key={`duplicate_${id}`}
                   className={`bg-[#d9d9d9] px-[48px] py-[18px] text-[24px]   text-[#FFF] font-[600] leading-[29px] rounded-[100px] ${isAnimating3 ? "btn3 ":"bg-[#d9d9d9] "}`}
                   btnText={item.btnText}
                   onMouseEnter={handleMouseEnter3}

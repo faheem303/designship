@@ -248,15 +248,20 @@ div.marquee>a>img {
   opacity: 1;
   /* display: block; */
 }
-.animate-slide {
-  animation: slide 130s linear infinite;
+.btn1{
+  background-color: rgb(255, 112, 211);
 }
+
+.animate-slide {
+  animation: slide 130s linear infinite; /* Update animation duration */
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%); /* Translate by half of the container width */
   }
 }
 .animate-slide2 {
@@ -264,10 +269,10 @@ div.marquee>a>img {
 }
 @keyframes slide2 {
   0% {
-    transform: translateX(0%); 
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%); /* Translate by half of the container width */
   }
 }
 .btn2{
@@ -277,11 +282,11 @@ div.marquee>a>img {
   animation: slide3 110s linear infinite;
 }
 @keyframes slide3 {
-  0% {
-    transform: translateX(0%); 
+   0% {
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%); /* Translate by half of the container width */
   }
 }
 .btn3{
