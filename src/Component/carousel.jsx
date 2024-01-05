@@ -15,6 +15,26 @@ const Carousel = () => {
     const [scrollLeft, setScrollLeft] = useState(0);
     const boxRef = useRef(null);
 
+
+    const handleTouchStart = (e) => {
+        setIsDragging(true);
+        const touch = e.touches[0];
+        setStartX(touch.clientX - boxRef.current.offsetLeft);
+        setScrollLeft(boxRef.current.scrollLeft);
+    };
+    const handleTouchMove = (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const touch = e.touches[0];
+        const x = touch.clientX - boxRef.current.offsetLeft;
+        const walk = (x - startX) * 2; 
+        boxRef.current.scrollLeft = scrollLeft - walk;
+    };
+    const handleTouchEnd = () => {
+        setIsDragging(false);
+    };
+
+
     const btnpressprev = () => {
         if (boxRef.current) {
             const box = boxRef.current;
@@ -68,7 +88,11 @@ const Carousel = () => {
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
-            style={{ width: "100%" }}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            onTouchCancel={handleTouchEnd}
+            style={{ touchAction: 'pan-y', width: "100%" }}
            
             >
                 <div className='mycard relative' >
