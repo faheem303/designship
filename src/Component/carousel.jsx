@@ -41,10 +41,10 @@ const Carousel = () => {
     const handleMouseMove = (e) => {
         if (!isDragging) return;
         e.preventDefault();
-        const x = e.pageX - boxRef.current.offsetLeft;
+        const x = e.clientX - startX;
         const walk = (x - startX) * 2; // Adjust the scrolling speed
         boxRef.current.scrollLeft = scrollLeft - walk;
-    };
+      };
 
     const handleMouseUp = () => {
         setIsDragging(false);
@@ -62,39 +62,41 @@ const Carousel = () => {
                 </div>
             </div>
             <div 
-            className="product-container"
+            className="product-container  cursor-grab"
             ref={boxRef}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            style={{ width: "100%" }}
+           
             >
                 <div className='mycard relative' >
-                    <img src={img1} alt="" />
+                    <img src={img1} alt=""  onDragStart={(e) => e.preventDefault()} />
                     <h3 className='absolute bottom-[6%] text-[24px] flex items-center font-[500]' > <hr className='w-[50px] h-[1px] text-white mr-3' /> Website Design</h3>
                 </div>
                 <div className='mycard relative ' >
-                    <img src={img2} alt="" />
+                    <img src={img2} alt=""  onDragStart={(e) => e.preventDefault()}/>
                     <h3 className='absolute bottom-[6%] text-[24px] text-black flex items-center font-[500]' > <hr className='w-[50px] h-[2px] hrcolor mr-3' />Packaging</h3>
                 </div>
                 <div className='mycard relative ' >
-                    <img src={cro4} alt="" />
+                    <img src={cro4} alt=""  onDragStart={(e) => e.preventDefault()} />
                     <h3 className='absolute bottom-[6%] text-[24px] flex items-center font-[500]' > <hr className='w-[50px] h-[1px] text-white mr-3' /> Web development</h3>
                 </div>
                 <div className='mycard relative ' >
-                    <img src={cro3} alt="" />
+                    <img src={cro3} alt=""  onDragStart={(e) => e.preventDefault()} />
                     <h3 className='absolute bottom-[6%] text-[24px] flex items-center font-[500]' > <hr className='w-[50px] h-[1px] text-white mr-3' />UI UX and app design</h3>
                 </div>
                 <div className='mycard relative ' >
-                    <img src={cro1} alt="" />
+                    <img src={cro1} alt=""  onDragStart={(e) => e.preventDefault()} />
                     <h3 className='absolute bottom-[6%] text-[24px] flex items-center font-[500]' > <hr className='w-[50px] h-[1px] text-white mr-3' /> Graphic design</h3>
                 </div>
                 <div className='mycard relative ' >
-                    <img src={cro2} alt="" />
+                    <img src={cro2} alt=""  onDragStart={(e) => e.preventDefault()} />
                     <h3 className='absolute bottom-[6%] text-[24px] flex items-center font-[500]' > <hr className='w-[50px] h-[1px] text-white mr-3' />Ecommerce</h3>
                 </div>
                 <div className='mycard relative ' >
-                    <img src={cro5} alt="" />
+                    <img src={cro5} alt=""  onDragStart={(e) => e.preventDefault()} />
                     <h3 className='absolute bottom-[6%] text-[24px] flex items-center font-[500]' > <hr className='w-[50px] h-[1px] text-white mr-3' />Branging</h3>
                 </div>
             </div>
