@@ -14,7 +14,7 @@ function Productpage() {
 
 
     return (
-        <div className='bg-white'>
+        <div className=''>
             <div className='pt-[6rem] containers max-w-[1340px] w-[95%]'>
                 <Link to="/portfolio">
                     <div className='flex items-center space-x-2 w-[210px] cursor-pointer pt-4'>

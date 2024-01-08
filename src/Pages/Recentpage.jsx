@@ -11,7 +11,7 @@ import recenticon from "../assets/images/recentIc.svg"
 function RecentProject() {
     return (
         <>
-            <div className="bg-white">
+            <div className="">
                 <div className="w-[95%] max-w-[1240px] py-[100px] mx-auto">
                     <div className="py-12">
                         <h3 className="text-[52px] text-center text-vlack font-[600]">Latest <br />

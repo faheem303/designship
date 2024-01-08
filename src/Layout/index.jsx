@@ -7,7 +7,7 @@ function Layout() {
 
     return (
 
-        <div className="">
+        <div className="backgroungmain">
             <div className="relative">
             <Navbar />
             <App />

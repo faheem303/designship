@@ -16,7 +16,7 @@ import OverpaySection from "./OverpaySection";
 function Home() {
   return (
     <div className="">
-      <div className="pt-[6rem] backgroungmain">
+      <div className="">
         <HeroSection />
         <HowItWorkSection />
         <ProjectSection />
