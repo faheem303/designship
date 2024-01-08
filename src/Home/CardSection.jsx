@@ -2,11 +2,12 @@ import React from "react";
 // import Img from "../Assets/svgs/twitter.svg";
 import { v4 as uuidv4 } from "uuid";
 import AnimateCard from "../Component/AnimateCard";
-import img1 from "../assets/images/howto (2).gif"
-import img2 from "../assets/images/howto (1).gif"
-import img3 from "../assets/images/howto (3).gif"
-import img4 from "../assets/images/howto (1).png"
-import img5 from "../assets/images/howto (4).gif"
+import img1 from "../assets/images/howto (1).png"
+import img2 from "../assets/images/howto (2).png"
+import img3 from "../assets/images/howto (3).png"
+import img4 from "../assets/images/howto (4).png"
+import img5 from "../assets/images/howto (5).png"
+import img6 from "../assets/images/howto (6).png"
 
 
 const cardsData = [
@@ -36,13 +37,13 @@ const cardsData = [
   },
   {
     id: uuidv4(),
-    icon: img3,
+    icon: img5,
     title: "Outstanding work",
     para: "Tired of templates and boring designs? Take it to the next level and wow your clients.",
   },
   {
     id: uuidv4(),
-    icon: img5,
+    icon: img6,
     title: "Custom made",
     para: "All designs with follow the same look and feel of your product. Consistency is the key!",
   },
@@ -52,7 +53,7 @@ function CardSection() {
   return (
     <>
       <div>
-        <div className="w-[95%] mx-auto py-[100px]">
+        <div className="w-[98%] mx-auto py-[100px]">
           <h2 className="2xl:text-[40px] xl:text-[40px] lg:text-[40px] md:text-[33px] sm:text-[25px] text-[25px] font-[400] 2xl:w-[50%] xl:w-[50%] lg:w-[55%] md:w-[70%]  sm:w-[80%] w-[100%] pb-[60px]">
             What do you get with our design subscription?
           </h2>

@@ -16,7 +16,7 @@ function Navbar() {
 
   }
   return (
-    <div className="w-[100%] bg-[#faf3f0] fixed z-[99]">
+    <div className="w-[100%] backgroungmainfixed z-[99]">
       <div className="containers min-h-[84px] flex items-center ">
         <div className="flex items-center justify-between w-[100%]  ">
           <div className="max-w-[200px] 2xl:w-[200px] xl:w-[200px] lg:w-[200px] md:w-[200px] sm:w-[200px] w-[120px]">
@@ -25,11 +25,11 @@ function Navbar() {
             </Link>
           </div>
           <div className=" items-center space-x-12 2xl:flex xl:flex lg:flex  hidden sm:hidden md:hidden">
-            <a href="" className="font-[600] text-[16px] outline-none">Services</a>
+            <a href="#services" className="font-[600] text-[16px] outline-none">Services</a>
             <Link to="portfolio" >
             <a href="" className="font-[600] text-[16px] outline-none">Portfolio</a>
             </Link>
-            <a href="" className="font-[600] text-[16px] outline-none">Pricing</a>
+            <a href="#pricing" className="font-[600] text-[16px] outline-none">Pricing</a>
             <a href="" className="font-[600] text-[16px] outline-none">About</a>
             <a href="" className="font-[600] text-[16px] outline-none">Blog</a>
           </div>

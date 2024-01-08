@@ -1,3 +1,4 @@
+import img5 from "../assets/images/Frame-171-1.jpg"
 
 
 const FeaturedCard = ({ data, showMoreProjects, classname }) => {

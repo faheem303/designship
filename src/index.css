@@ -264,6 +264,9 @@ div.marquee>a>img {
 .card-container:hover .play {
   opacity: 1;
 }
+.backgroungmain{
+  background-image: linear-gradient(to bottom, #d3d3d3, #f8f8f8);
+}
 
 /* .cardContainer{
   overflow: hidden;

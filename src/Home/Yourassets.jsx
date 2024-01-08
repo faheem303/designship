@@ -10,6 +10,7 @@ function YourAssets() {
            <div className="w-[95%] m-auto ">
                 <Carousel />
            </div>
+           <p id="pricing"></p>
         </div>
     );
 }

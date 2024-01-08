@@ -21,8 +21,8 @@ const initialProjects = [
                 industry: 'Select industry',
                 titel: "Consulting",
                 subtitel: "Trippant",
-                link:"/portfolio/productpagetrippant",
-                
+                link: "/portfolio/productpagetrippant",
+
             },
             {
                 id: 2,
@@ -31,20 +31,20 @@ const initialProjects = [
                 industry: 'Select industry',
                 titel2: "Recruitment",
                 subtitel2: "Stott and May",
-                cardtitel2:"Hugh Fraser, Doorway",
-                card2para2:"“Their attention to detail was brilliant with great design innovations where there was room for them.”",
-                link:"/portfolio/productpagestottandmay",
+                cardtitel2: "Hugh Fraser, Doorway",
+                card2para2: "“Their attention to detail was brilliant with great design innovations where there was room for them.”",
+                link: "/portfolio/productpagestottandmay",
 
             },
 
             {
                 id: 3,
-               img: img3,
+                img: img3,
                 service: 'Select service',
                 industry: 'Select industry',
                 titel: "Software",
                 subtitel: "Doorway",
-                link:"/portfolio/productpage",
+                link: "/portfolio/productpage",
             },
             {
                 id: 4,
@@ -53,9 +53,9 @@ const initialProjects = [
                 industry: 'Select industry',
                 titel2: "Design",
                 subtitel2: "Femme Type",
-                cardtitel2:"Aldo Guiducci, Scynce",
-                card2para2:"“Their comments and feedback are excellent, and they’ve gone beyond the scope of work. They’ve brought in their point of view and delivered excellent results, which will be the starting point for our company.”",
-                link:"/portfolio/productpagefemmetype",
+                cardtitel2: "Aldo Guiducci, Scynce",
+                card2para2: "“Their comments and feedback are excellent, and they’ve gone beyond the scope of work. They’ve brought in their point of view and delivered excellent results, which will be the starting point for our company.”",
+                link: "/portfolio/productpagefemmetype",
             },
             {
                 id: 5,
@@ -64,7 +64,7 @@ const initialProjects = [
                 industry: 'Select industry',
                 titel: "Investment company",
                 subtitel: "Kommune",
-                link:"/portfolio/productpagestottandmay",
+                link: "/portfolio/productpagestottandmay",
             },
             {
                 id: 6,
@@ -73,7 +73,7 @@ const initialProjects = [
                 subtitel: "Trippant",
                 service: 'UX/UI',
                 industry: 'Music',
-                link:"/portfolio/productpagetrippant",
+                link: "/portfolio/productpagetrippant",
 
             },
             {
@@ -83,7 +83,7 @@ const initialProjects = [
                 subtitel: "Trippant",
                 service: 'UX/UI',
                 industry: 'Music',
-                link:"/portfolio/productpagefemmetype",
+                link: "/portfolio/productpagefemmetype",
             },
             {
                 id: 8,
@@ -92,9 +92,9 @@ const initialProjects = [
                 subtitel: "Trippant",
                 service: 'UX/UI',
                 industry: 'Education',
-                link:"/portfolio/productpagefemmetype",
+                link: "/portfolio/productpagefemmetype",
             },
-           
+
             {
                 id: 9,
                 img: img4,
@@ -102,8 +102,8 @@ const initialProjects = [
                 industry: 'Design',
                 titel: "Consulting",
                 subtitel: "Trippant",
-                link:"/portfolio/productpagefemmetype",
-               
+                link: "/portfolio/productpagefemmetype",
+
             },
             {
                 id: 10,
@@ -112,49 +112,20 @@ const initialProjects = [
                 industry: 'Design',
                 titel: "Consulting",
                 subtitel: "Trippant",
-                link:"/portfolio/productpagetrippant",
+                link: "/portfolio/productpagetrippant",
 
             },
+
             {
                 id: 11,
-                imgshow: img1,
-                service: 'Print Design',
-                industry: 'Design',
-                showtitel: "Consulting",
-                showsubtitel: "Trippant",
-                link:"/portfolio/productpagetrippant",
-
-            },
-            {
-                id: 12,
                 img: img2,
                 titel: "Consulting",
                 subtitel: "Trippant",
                 service: 'Print Design',
                 industry: 'Music',
-                link:"/portfolio/productpagestottandmay",
+                link: "/portfolio/productpagestottandmay",
             },
-            {
-                id: 13,
-                imgshow: img3,
-                service: 'Select service',
-                industry: 'Select industry',
-                showtitel: "Consulting",
-                showsubtitel: "Trippant",
-                link:"/portfolio/productpage",
 
-            },
-            {
-                id: 14,
-                imgshow: img1,
-                service: 'Select service',
-                industry: 'Select industry',
-                showtitel: "Recruitment",
-                subtitel2: "Stott and May",
-                showsubtitel:"Hugh Fraser, Doorway",
-                link:"/portfolio/productpagetrippant",
-
-            },
         ]
     },
     {
@@ -167,7 +138,7 @@ const initialProjects = [
                 subtitel: "Kommune",
                 service: 'Print Design',
                 industry: 'Education',
-                link:"/portfolio/productpagetrippant",
+                link: "/portfolio/productpagetrippant",
 
             },
             {
@@ -177,7 +148,7 @@ const initialProjects = [
                 subtitel: "Recruitment",
                 service: 'Print Design',
                 industry: 'Music',
-                link:"/portfolio/productpagefemmetype",
+                link: "/portfolio/productpagefemmetype",
             },
             {
                 id: 3,
@@ -186,7 +157,7 @@ const initialProjects = [
                 subtitel: "Femme Type",
                 service: 'Print Design',
                 industry: 'Education',
-                link:"/portfolio/productpagestottandmay",
+                link: "/portfolio/productpagestottandmay",
             },
             {
                 id: 4,
@@ -195,7 +166,7 @@ const initialProjects = [
                 subtitel: "Trippant",
                 service: 'Select service',
                 industry: 'Education',
-                link:"/portfolio/productpagefemmetype",
+                link: "/portfolio/productpagefemmetype",
             },
             {
                 id: 5,
@@ -204,9 +175,9 @@ const initialProjects = [
                 subtitel: "Trippant",
                 service: 'Select service',
                 industry: 'Design',
-                link:"/portfolio/productpagestottandmay",
+                link: "/portfolio/productpagestottandmay",
             },
-           
+
             {
                 id: 6,
                 img: img2,
@@ -214,7 +185,7 @@ const initialProjects = [
                 subtitel: "Trippant",
                 service: 'UX/UI',
                 industry: 'Design',
-                link:"/portfolio/productpagestottandmay",
+                link: "/portfolio/productpagestottandmay",
             },
             {
                 id: 7,
@@ -223,7 +194,7 @@ const initialProjects = [
                 subtitel: "Trippant",
                 service: 'UX/UI',
                 industry: 'Select industry',
-                link:"/portfolio/productpagestottandmay",
+                link: "/portfolio/productpagestottandmay",
             },
             {
                 id: 8,
@@ -232,10 +203,10 @@ const initialProjects = [
                 subtitel: "Femme Type",
                 service: 'UX/UI',
                 industry: 'Select industry',
-                link:"/portfolio/productpagetrippant",
+                link: "/portfolio/productpagetrippant",
 
             },
-            
+
             {
                 id: 9,
                 img: img1,
@@ -243,7 +214,7 @@ const initialProjects = [
                 subtitel: "Trippant",
                 service: 'Select service',
                 industry: 'Music',
-                link:"/portfolio/productpagetrippant",
+                link: "/portfolio/productpagetrippant",
 
             },
             {
@@ -253,7 +224,7 @@ const initialProjects = [
                 subtitel: "Femme Type",
                 service: 'Print Design',
                 industry: 'Select industry',
-                link:"/portfolio/productpagestottandmay",
+                link: "/portfolio/productpagestottandmay",
             },
             {
                 id: 11,
@@ -262,7 +233,7 @@ const initialProjects = [
                 subtitel: "Femme Type",
                 service: 'Web Design',
                 industry: 'Select industry',
-                link:"/portfolio/productpagekommune",
+                link: "/portfolio/productpagekommune",
             },
             {
                 id: 12,
@@ -271,7 +242,7 @@ const initialProjects = [
                 subtitel: "Femme Type",
                 service: 'Web Design',
                 industry: 'Design',
-                link:"/portfolio/productpagefemmetype",
+                link: "/portfolio/productpagefemmetype",
             },
             {
                 id: 13,
@@ -280,7 +251,7 @@ const initialProjects = [
                 subtitel: "Femme Type",
                 service: 'Web Design',
                 industry: 'Education',
-                link:"/portfolio/productpagetrippant",
+                link: "/portfolio/productpagetrippant",
 
             },
             {
@@ -290,9 +261,9 @@ const initialProjects = [
                 subtitel: "Femme Type",
                 service: 'Web Design',
                 industry: 'Music',
-                link:"/portfolio/productpagestottandmay",
+                link: "/portfolio/productpagestottandmay",
             },
-           
+
         ]
     },
 ]
@@ -374,35 +345,58 @@ function Portfolio() {
                 </div>
                 <div className="flex justify-center space-x-8">
                     <Dropdown
-                        options={['Select service','UX/UI', 'Web Design', 'Print Design']}
+                        options={['Select service', 'UX/UI', 'Web Design', 'Print Design']}
                         handleSelection={handleLanguageSelection}
                         selectedOption={language}
                         toggleDropdown={toggle}
                     />
                     <Dropdown
-                        options={['Select industry','Design', 'Education', 'Music']}
+                        options={['Select industry', 'Design', 'Education', 'Music']}
                         handleSelection={handleLanguageSelection2}
                         selectedOption={language2}
                         toggleDropdown={toggle2}
                     />
                 </div>
-                <div className='cardswrapper relative grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-x-[7rem] pt-[6rem] '>
+                <div className='cardswrapper relative grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-x-[7rem] pt-[6rem] pb-[6rem] '>
                     {
                         filteredProjects.map((project) => (
                             <div className='w-[100%] 2xl:h-[630px] xl:h-[630px] lg:h-[530px] md:h-[500px] sm:h-[auto] h-[auto] mb-[6rem]' key={project.id}>
                                 <Link to={project.link}>
-                                <FeaturedCard
-                                    data={project}
-                                    showMoreProjects={showMoreProjects}
-                                    classname='w-[100%] cursor-pointer'
-                                />
+                                    <FeaturedCard
+                                        data={project}
+                                        showMoreProjects={showMoreProjects}
+                                        classname='w-[100%] cursor-pointer'
+                                    />
                                 </Link>
                             </div>
                         ))
                     }
 
                 </div>
-                <div className='flex justify-center absolute top-[70%] left-[46%]'>
+                {
+                    showMoreProjects &&
+                    <div className=' flex gap-[7rem] relative'>
+                        <div className='w-[46%] mr-auto pt-[10rem] w-[50%] space-y-[6rem]'>
+                        <Link to="/portfolio/productpagetrippant">
+                            <img src={img1} alt="" />
+                            <div className='space-y-3 pt-6'>
+                                <p className='text-[18px] font-[500] '>Consulting</p>
+                                <h3 className='text-[22px] font-[600] text-gray-500'>Trippant</h3>
+                            </div>
+                        </Link>
+                        </div>
+                        <div className='w-[46%] space-y-[6rem] mt-[-15rem]'>
+                        <Link to="/portfolio/productpagestottandmay">
+                            <img src={img2} alt="" />
+                            <div className='space-y-3 pt-6'>
+                                <p className='text-[18px] font-[500] '>Recruitment</p>
+                                <h3 className='text-[22px] font-[600] text-gray-500'>Stott and May</h3>
+                            </div>
+                        </Link>
+                        </div>
+                    </div>
+                }
+                <div className='flex justify-center absolute bottom-[15%] left-[46%]'>
                     <button
                         className="py-3 px-7 rounded-[14px] border border-black hover:bg-black hover:text-white font-[600]"
                         onClick={handleLoadMore}
