@@ -3,11 +3,11 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import AnimateCard from "../Component/AnimateCard";
 import img1 from "../assets/images/howto (1).png"
-import img2 from "../assets/images/howto (2).png"
+import img6 from "../assets/images/howto (2).png"
 import img3 from "../assets/images/howto (3).png"
 import img4 from "../assets/images/howto (4).png"
 import img5 from "../assets/images/howto (5).png"
-import img6 from "../assets/images/howto (6).png"
+import img2 from "../assets/images/howto (6).png"
 
 
 const cardsData = [
