@@ -2,44 +2,49 @@ import React from "react";
 // import Img from "../Assets/svgs/twitter.svg";
 import { v4 as uuidv4 } from "uuid";
 import AnimateCard from "../Component/AnimateCard";
-import { FaRegClock } from "react-icons/fa6";
+import img1 from "../assets/images/howto (2).gif"
+import img2 from "../assets/images/howto (1).gif"
+import img3 from "../assets/images/howto (3).gif"
+import img4 from "../assets/images/howto (1).png"
+import img5 from "../assets/images/howto (4).gif"
+
 
 const cardsData = [
   {
     id: uuidv4(),
-    icon: <FaRegClock />,
-    title: "Unlimited requests",
-    para: "Make unlimited requests while subscribed, just like having an in-house designer. However many tasks or revisions you may have, we'll tackle them all in order, working on up to one or two requests at a time, depending on your subscription plan.",
+    icon: img1,
+    title: "Your board",
+    para: "All your designs statuses in one place. Backlog, active requests and approved work.",
   },
   {
     id: uuidv4(),
-    icon: <FaRegClock />,
-    title: "Full ownership",
-    para: "You will receive complete ownership of all designs or other assets produced as part of the engagement, including source files. You will also have access to dozens of licenses, plugins and tools free of charge!",
+    icon: img2,
+    title: "Your entire team",
+    para: "Don’t have time to manage some tasks? Invite unlimited team members.",
   },
   {
     id: uuidv4(),
-    icon: <FaRegClock />,
-    title: "No obligation contract",
-    para: "You can use our subscription for as long as you’d like and can cancel anytime! There are no hidden fees or penalties for cancelation; the subscription will simply not renew from the following month. You can cancel from your account or by letting us know.",
+    icon: img3,
+    title: "No commitments",
+    para: "Month-to-month collaboration with no contracts. Enjoy it or cancel it. It’s up to you!",
   },
   {
     id: uuidv4(),
-    icon: <FaRegClock />,
-    title: "Premium quality without the price tag",
-    para: "Access the top 0.5% of talent for branding, graphic design, motion graphics, video production, UI/UX, web design, and web development for the cost of hiring a mid-level designer. Get premium design agency services with project management and art direction without a hefty price tag.",
+    icon: img4,
+    title: "Scalable System",
+    para: "Freedom to scale your design needs easier than ever.",
   },
   {
     id: uuidv4(),
-    icon: <FaRegClock />,
-    title: "Seamless integration",
-    para: "We will create a ClickUp task board where you and your team can review progress. You can also email in tasks, and we're happy to integrate with your existing communication flows; if you want us to join your Slack or use another tool, just let us know!",
+    icon: img3,
+    title: "Outstanding work",
+    para: "Tired of templates and boring designs? Take it to the next level and wow your clients.",
   },
   {
     id: uuidv4(),
-    icon: <FaRegClock />,
-    title: "Flexibility and lightning speed",
-    para: "We pride ourselves on a very fast turnaround speed by all design agency standards. Typically, you can expect to receive an update from us every 1-3 working days (depending on the size of the request), so you’ll never be left waiting for long!",
+    icon: img5,
+    title: "Custom made",
+    para: "All designs with follow the same look and feel of your product. Consistency is the key!",
   },
 ];
 

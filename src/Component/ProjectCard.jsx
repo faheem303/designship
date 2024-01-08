@@ -1,50 +1,26 @@
 import React, { useState } from "react";
 
+import recico from "../assets/images/recico.svg"
 
-function ProjectCard({ Cardclassmain, Cardimg, btntext1, btntext2, btntext3, footerLogo, para, imgWrapper }) {
-    const [showBtn, setShowBtn] = useState(false);
 
-    const handleMouseEnter = () => {
-        setShowBtn(true);
-    };
-
-    const handleMouseLeave = () => {
-        setShowBtn(false);
-    };
+function ProjectCard({Cardimg,title,subtitle}) {
+   
     return (
         <>
-            <div>
-                <div className={`${Cardclassmain}`} >
-                    <div className={`${imgWrapper} relative `} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                     {
-                        showBtn&&
-                        <div className="absolute top-[5%] right-[2%]  flex space-x-3">
-                        {
-                            btntext1&&
-                        <button className="py-1 text-[14px] px-5 font-[600] bg-[#02055d] rounded-[30px] text-white">{btntext1}</button>
-                        }
-                        {
-                            btntext2&&
-                        <button className="py-1 text-[14px] px-5 font-[600] bg-[#02055d] rounded-[30px] text-white">{btntext2}</button>
-                        }
-                        {
-                           btntext3&&
-                        <button className="py-1 text-[14px] px-5 font-[600] bg-[#02055d] rounded-[30px] text-white">{btntext3}</button>
-                        }
-                    </div>
-                     }
-                        <img src={Cardimg} alt="" />
-                    </div>
-                   
-                  
-                    <div className="flex justify-between">
-                        <div><img className="w-[85px] " src={footerLogo} alt="" /></div>
-                        <div className="pb-4">
-                            <h4 className="text-[16px] text-gray-500">{para}<span className="text-[16px] text-gray-500 italic">Case Study coming soon!</span> </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             <div className="space-y-6 card-container">
+      <div className="relative flex justify-center items-center">
+        <img className="w-[100%] max-h-[500px] rounded-[32px] card-image" src={Cardimg} alt="" />
+        <div className="play w-[120px] h-[120px] absolute play-icon">
+          <div className="w-[100%] h-[100%] bg-[#ffffffbf] flex justify-center items-center rounded-full">
+            <img src={recico} className="h-[15px]" alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between  card-text">
+        <h4 className="font-[700] text-[22px] border-b-4 border-transparent title">{title}</h4>
+        <h4 className="font-[600] opacity-[0.7] text-[18px] subtitle">{subtitle}</h4>
+      </div>
+    </div>
         </>
     );
 }

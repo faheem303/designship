@@ -23,7 +23,7 @@ function Home() {
         <Services />
         <CardSection/>
         <YourAssets />
-        <NeedaStartSection />
+        {/* <NeedaStartSection /> */}
         <PriceSection/>
         <Salary/>
         <OverpaySection />

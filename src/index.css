@@ -207,7 +207,7 @@ div.marquee>a>img {
 .link a{
   color: #8f78f0;
 }
-.cardContainer{
+/* .cardContainer{
   overflow: hidden;
   cursor: pointer;
 }
@@ -217,11 +217,55 @@ div.marquee>a>img {
 }
 .cardContainer:hover .animteCard{
   transform: translateY(0);
-}
+} */
 .link a{
   color: #8f78f0;
 }
-.cardContainer{
+
+.play {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.card-text {
+  position: relative;
+}
+
+/* Styles for the card container */
+.card-container {
+  /* ... other styles remain unchanged ... */
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.title {
+  position: relative;
+  border-bottom: 2px solid transparent; 
+  transition: border-color 0.3s ease-in-out;
+  cursor: pointer; 
+  padding-bottom: 2px; 
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black; 
+  transition: width 0.3s ease-in-out; 
+}
+.card-container:hover .title::before {
+  width: 100%; 
+}
+
+.card-container:hover .play {
+  opacity: 1;
+}
+
+/* .cardContainer{
   overflow: hidden;
   cursor: pointer;
   transition: all ease-in-out .5s;
@@ -234,7 +278,7 @@ div.marquee>a>img {
 }
 .cardContainer:hover .animteCard{
   transform: translateY(0);
-}
+} */
 .animteCard i{
   color: #ff70d3;
 

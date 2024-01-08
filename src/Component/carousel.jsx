@@ -121,7 +121,7 @@ const Carousel = () => {
                 </div>
                 <div className='mycard relative ' >
                     <img src={cro5} alt=""  onDragStart={(e) => e.preventDefault()} />
-                    <h3 className='absolute bottom-[6%] text-[24px] flex items-center font-[500]' > <hr className='w-[50px] h-[1px] text-white mr-3' />Branging</h3>
+                    <h3 className='absolute bottom-[6%] text-[24px] flex items-center font-[500]' > <hr className='w-[50px] h-[1px] text-white mr-3' />Branding</h3>
                 </div>
             </div>
         </div>

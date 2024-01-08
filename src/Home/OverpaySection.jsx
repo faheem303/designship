@@ -34,7 +34,7 @@ const OverpaySection = () => {
   return (
     <>
       <div>
-        <div className="w-[95%] mx-auto">
+        <div className="w-[85%] mx-auto">
           <div>
             <div className="2xl:flex xl:flex lg:flex md:block sm:block block 2xl:space-y-0 xl:space-y-0 lg:space-y-0 md:space-y-[3rem] sm:space-y-[3rem] space-y-[3rem] justify-between items-center ">
               <div className="space-y-3 2xl:w-[45%] xl:w-[45%] lg:w-[45%] md:w-[100%] sm:w-[100%] w-[100%] ">

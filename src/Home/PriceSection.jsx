@@ -170,16 +170,30 @@ function Pricing() {
               </p>
             </div>
             <div className="2xl:w-[37%] xl:w-[37%] lg:w-[37%] md:w-[100%] sm:w-[100%] w-[100%] flex items-end justify-end pb-[30px]">
-              <span onClick={()=> handleClick(1)} className={`cursor-pointer border-b-[2px] border-[#faf3f0] text-[#000000bf] text-[22px] font-[400] hover:text-[#02055d] mr-[18px] pb-[2px] hover:border-b-[2px] hover:border-[#02055d] hover:border-solid ${activeTab === 1?"font-[700] text-[#02055d] border-b-[2px] border-[#02055d] border-solid":""}`}>
+              {/* <span onClick={()=> handleClick(1)} className={`cursor-pointer border-b-[2px] border-[#faf3f0] text-[#000000bf] text-[22px] font-[400] hover:text-[#02055d] mr-[18px] pb-[2px] hover:border-b-[2px] hover:border-[#02055d] hover:border-solid ${activeTab === 1?"font-[700] text-[#02055d] border-b-[2px] border-[#02055d] border-solid":""}`}>
                 Dedicated Team
-              </span>
-              <span onClick={()=> handleClick(2)} className={`cursor-pointer border-b-[2px] border-[#faf3f0] text-[#000000bf] text-[22px] font-[400] hover:text-[#02055d] mr-[18px] pb-[2px] hover:border-b-[2px] hover:border-[#02055d] hover:border-solid ${activeTab === 2?"font-[700] text-[#02055d] border-b-[2px] border-[#02055d] border-solid":""}`}>
+              </span> */}
+              <span onClick={()=> handleClick(2)} className={`cursor-pointer text-[22px] font-[600] text-[#02055d] mr-[18px] pb-[2px] hover:border-[#02055d] hover:border-solid `}>
                 Monthly Buckets
               </span>
             </div>
           </div>
           <div>
-            {
+          <div className="flex flex-wrap 2xl:justify-between xl:justify-between lg:justify-between md:justify-between sm:justify-center justify-center items-center gap-y-[40px]">
+            {pricingData.map((item, id) => (
+              <div className="2xl:w-[32%] xl:w-[32%] lg:w-[32%] md:w-[48%] sm:w-[70%] w-[100%] ">
+                <StartedCards
+                subTitleCard={item.subTitleCard}
+                idata={item.idata}
+                  cardTitle={item.title}
+                  cardPara={item.para}
+                  amount={item.amount}
+                  hourly={item.hourly}
+                />
+              </div>
+            ))}
+          </div>
+            {/* {
               activeTab === 1 ?(
           <div className="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col gap-y-[50px] items-center justify-between">
             <div className="2xl:w-[49%] xl:w-[49%] lg:w-[49%] md:w-[60%] sm:w-[70%] w-[100%]">
@@ -208,7 +222,7 @@ function Pricing() {
             ))}
           </div>
               ):("")
-            }
+            } */}
 
           </div>
         </div>
