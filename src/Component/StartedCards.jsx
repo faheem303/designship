@@ -68,7 +68,7 @@ function StartedCards({ isBackground,subTitleCard, cardTitle, idata, cardPara, a
           </div>
         </div>
         <div>
-        <div className="flex justify-center items-center">
+        <div className="flex px-[32px] items-center">
                 <Button
                   className={
                     isBackground === true
