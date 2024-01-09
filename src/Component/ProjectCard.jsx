@@ -9,7 +9,7 @@ function ProjectCard({Cardimg,title,subtitle}) {
         <>
              <div className="space-y-6 card-container">
       <div className="relative flex justify-center items-center">
-        <img className="w-[100%] max-h-[500px] rounded-[32px] card-image" src={Cardimg} alt="" />
+        <img className="w-[100%] max-h-[470px] rounded-[32px] card-image" src={Cardimg} alt="" />
         <div className="play w-[120px] h-[120px] absolute play-icon">
           <div className="w-[100%] h-[100%] bg-[#ffffffbf] flex justify-center items-center rounded-full">
             <img src={recico} className="h-[15px]" alt="" />

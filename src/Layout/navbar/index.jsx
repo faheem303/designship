@@ -16,7 +16,7 @@ function Navbar() {
 
   }
   return (
-    <div className="w-[100%]  z-[99]">
+    <div className="w-[100%] z-[99]">
       <div className="containers min-h-[84px] flex items-center ">
         <div className="flex items-center justify-between w-[100%]  ">
           <div className="max-w-[200px] 2xl:w-[200px] xl:w-[200px] lg:w-[200px] md:w-[200px] sm:w-[200px] w-[120px]">

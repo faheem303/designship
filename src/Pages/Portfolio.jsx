@@ -339,18 +339,20 @@ function Portfolio() {
 
     return (
         <div className='z-[1]'>
-            <div className="py-[6rem] containers  max-w-[1410px] w-[95%]">
-                <div className='text-center pt-[5rem] pb-[3.3rem]'>
+            <div className="pb-[6rem] pt-[4rem] containers  max-w-[1410px] w-[95%]">
+                <div className='text-center  pb-[3.3rem]'>
                     <h3 className='text-[52px]'>Featured projects</h3>
                 </div>
                 <div className="flex justify-center space-x-8">
                     <Dropdown
+                    DropButtonClass="flex w-full items-center justify-between rounded bg-white p-2 border-b border-gray-300 bg-transparent font-[500] text-gray-500"
                         options={['Select service', 'UX/UI', 'Web Design', 'Print Design']}
                         handleSelection={handleLanguageSelection}
                         selectedOption={language}
                         toggleDropdown={toggle}
                     />
                     <Dropdown
+                    DropButtonClass="flex w-full items-center justify-between rounded bg-white p-2 border-b border-gray-300 bg-transparent font-[500] text-gray-500"
                         options={['Select industry', 'Design', 'Education', 'Music']}
                         handleSelection={handleLanguageSelection2}
                         selectedOption={language2}
@@ -360,7 +362,7 @@ function Portfolio() {
                 <div className='cardswrapper relative grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-x-[7rem] pt-[6rem] pb-[6rem] '>
                     {
                         filteredProjects.map((project) => (
-                            <div className='w-[100%] 2xl:h-[630px] xl:h-[630px] lg:h-[530px] md:h-[500px] sm:h-[auto] h-[auto] mb-[6rem]' key={project.id}>
+                            <div className='productcard w-[100%] 2xl:h-[630px] xl:h-[620px] lg:h-[530px] md:h-[500px] sm:h-[auto] h-[auto] mb-[6rem]' key={project.id}>
                                 <Link to={project.link}>
                                     <FeaturedCard
                                         data={project}

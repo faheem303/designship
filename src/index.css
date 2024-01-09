@@ -27,8 +27,9 @@ body {
 }
 
 .cardswrapper :nth-child(4){
-  margin-top: 20rem !important;
+  margin-top: 15rem !important;
   }
+ 
   .cardswrapper :nth-child(6){
   margin-top: 24rem !important;
 
@@ -265,7 +266,7 @@ div.marquee>a>img {
   opacity: 1;
 }
 .backgroungmain{
-  background-image: linear-gradient(to bottom, #d3d3d3, #f8f8f8);
+  background-image: linear-gradient(to bottom left, #cacaca 30%, #f8f8f8 70%);
 }
 
 /* .cardContainer{

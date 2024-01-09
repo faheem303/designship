@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import ProjectCard from "../Component/ProjectCard";
-import img1 from "../assets/images/recimg1.jpg"
-import img2 from "../assets/images/recimg2.jpg"
-import img3 from "../assets/images/recimg3.jpg"
-import img4 from "../assets/images/recimg4.jpg"
+import img1 from "../assets/images/Trippant-cover-1-1536x1202.webp"
+import img2 from "../assets/images/Stott-and-May-cover-2.webp"
+import img3 from "../assets/images/Doorway_passionate_cover-2-1.webp"
+import img4 from "../assets/images/Instagram_shot_1_01-1-1536x1536.webp"
 
 import recenticon from "../assets/images/recentIc.svg"
 
@@ -56,7 +56,7 @@ function ProjectSection() {
                             </div>
                         </div>
                         <div className="flex justify-center items-center py-[2rem]">
-                            <Link to="/recentproject">
+                            <Link to="/portfolio">
                             <button className="font-[600] flex items-center justify-center  text-[18px] bg-[black] text-white rounded-[15px] w-[180px] py-3">View all work < span className="ml-[0.5rem]" ><img className="h-[15px]" src={recenticon} alt="" /></span></button>
                             </Link>
                         </div>

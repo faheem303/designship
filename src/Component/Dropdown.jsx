@@ -8,7 +8,7 @@ const Dropdown = ({ options, handleSelection, selectedOption, toggleDropdown }) 
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="relative w-[20rem] z-[2]">
+        <div className="relative w-[20rem]">
             <button
                 onClick={() => {
                     setOpen(!open);
@@ -21,7 +21,7 @@ const Dropdown = ({ options, handleSelection, selectedOption, toggleDropdown }) 
             </button>
 
             {open && (
-                <ul className="z-2 absolute mt-1 w-full rounded bg-white ring-1 ring-gray-300" onClick={() => setOpen(false)}>
+                <ul className="z-[9] absolute mt-1 w-full rounded bg-white ring-1 ring-gray-300" onClick={() => setOpen(false)}>
                     {options.map((option) => (
                         <li
                             key={option}

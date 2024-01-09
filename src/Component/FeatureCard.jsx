@@ -7,7 +7,7 @@ const FeaturedCard = ({ data, showMoreProjects, classname }) => {
             <div className='space-y-8 pb-[rem]'>
                 {
                     data.img &&
-                <img src={data.img} className='py-2' alt="" />
+                <img src={data.img} className='py-2 rounded-[32px]' alt="" />
                 }
                 <div className='space-y-1'>
                     <p className='text-[16px] font-[500]'>{data.titel}</p>
@@ -17,12 +17,12 @@ const FeaturedCard = ({ data, showMoreProjects, classname }) => {
             {
                 data.img2 && data.titel2 && data.subtitel2 &&
                 <div className='space-y-8 '>
-                     <div className='space-y-3 pb-[6rem]'>
+                     <div className='space-y-3 pb-[4rem]'>
                         <p className='text-[18px] font-[500] '>{data.card2para2}</p>
                         <h3 className='text-[16px] font-[600] text-gray-500'>{data.cardtitel2}</h3>
                     </div>
 
-                    <img src={data.img2} alt="" className='' />
+                    <img src={data.img2} alt="" className='rounded-[32px]' />
                     <div className='space-y-1'>
                         <p className='text-[16px] font-[500]'>{data.titel2}</p>
                         <h3 className='text-[22px] font-[600] text-gray-500'>{data.subtitel2}</h3>
@@ -32,7 +32,7 @@ const FeaturedCard = ({ data, showMoreProjects, classname }) => {
 
             {showMoreProjects && (data.showtitel || data.showsubtitel) && (
                 <div className=' space-y-8 '>
-                    <img src={data.imgshow} alt="" />
+                    <img src={data.imgshow} alt="" className="rounded-[32px]"/>
                     <div className='space-y-1'>
                         <p className='text-[16px] font-[500]'>{data.showtitel}</p>
                         <h3 className='text-[22px] font-[600] text-gray-500'>{data.showsubtitel}</h3>
@@ -45,7 +45,7 @@ const FeaturedCard = ({ data, showMoreProjects, classname }) => {
                         <p className='text-[18px] font-[500] '>{data.showsubtitel2}</p>
                         <h3 className='text-[16px] font-[600] text-gray-500'>{data.showtitel}</h3>
                     </div>
-                    <img src={data.imgshow2} alt="" />
+                    <img src={data.imgshow2} alt="" className="rounded-[32px]" />
                 </div>
             )}
 
